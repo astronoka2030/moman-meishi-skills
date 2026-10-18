@@ -70,20 +70,20 @@
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    overflow-x: auto; /* 横スクロール可能に戻す */
+    overflow-x: auto; /* 横スクロール可能 */
     position: relative;
   }
   table { 
     width: 100%; 
     border-collapse: separate; 
     border-spacing: 0; 
-    min-width: 750px; /* スライドできるようにテーブル幅を確保 */
+    min-width: 750px;
   }
   th, td { 
     padding: 8px 6px; 
     text-align: left; 
     border-bottom: 1px solid #e1e8ed; 
-    font-size: 11px; /* 全体の文字サイズをコンパクトに */
+    font-size: 11px;
     line-height: 1.3;
   }
   th {
@@ -97,13 +97,13 @@
     white-space: nowrap;
   }
 
-  /* 名士名列（1列目）のみ左端に固定 ＆ 幅をスリム化 */
+  /* 名士名列（1列目）のみ左端に固定 ＆ 幅を約4文字分にスリム化 */
   th:first-child, td:first-child {
     position: sticky;
     left: 0;
     z-index: 5;
     box-shadow: 2px 0 5px rgba(0,0,0,0.08);
-    width: 4.2em;      /* 全角4文字程度でスリムに折り返し */
+    width: 4.2em;
     max-width: 4.2em;
     word-break: break-all;
     white-space: normal;
@@ -127,7 +127,7 @@
     line-height: 1.2;
   }
 
-  /* タグ装飾（文字小さめ） */
+  /* タグ装飾 */
   .rank-badge { display: inline-block; padding: 2px 4px; border-radius: 3px; font-size: 10px; font-weight: bold; white-space: nowrap; }
   .rank-rare-legend { background-color: #fef3c7; color: #b45309; border: 1px solid #f59e0b; }
   .type-badge { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 10px; font-weight: bold; background-color: #e2e8f0; color: #334155; white-space: nowrap; }
@@ -144,9 +144,9 @@
   .badge-produce { background-color: #27ae60; }
   .badge-special { background-color: #8e44ad; }
 
-  .skill-name { font-weight: bold; color: #2c3e50; font-size: 11px; white-space: nowrap; }
+  /* スキル名（<br>での改行を許可） */
+  .skill-name { font-weight: bold; color: #2c3e50; font-size: 11px; white-space: normal; line-height: 1.2; }
 </style>
-
 </head>
 <body>
 
@@ -256,13 +256,14 @@
         <td><span class="badge badge-buff">征戦バフ</span></td>
         <td>征戦時、味方全体のダメージバフ +12%</td>
       </tr>
+
       <!-- 孟子 -->
       <tr data-slot="1" data-type="槍" data-rank="伝説(希少)">
         <td class="meishi-name">孟子</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
         <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
-        <td class="skill-name">魚、我が欲するところなり</td>
+        <td class="skill-name">魚、我が欲する<br>ところなり</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-defense">軽減</span><span class="badge badge-special">状態異常</span></td>
         <td>40%発動: 敵に200%ダメージ / 50%で「生」(味方ダメ軽減+30% 2ターン持続) / 50%で「義」(敵行動前に120%異常ダメ 2ターン持続)</td>
       </tr>
