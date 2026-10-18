@@ -9,30 +9,30 @@
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
     background-color: #f4f6f8;
     color: #333;
-    padding: 10px;
+    padding: 8px;
     margin: 0;
   }
   h1 {
     text-align: center;
     color: #2c3e50;
-    margin-bottom: 15px;
-    font-size: 18px;
+    margin-bottom: 12px;
+    font-size: 16px;
   }
   .controls {
     max-width: 1100px;
-    margin: 0 auto 15px auto;
+    margin: 0 auto 12px auto;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     background: #fff;
-    padding: 12px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   }
   .filter-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 4px;
     align-items: center;
   }
   .group-title {
@@ -40,15 +40,15 @@
     font-weight: bold;
     color: #64748b;
     margin-right: 2px;
-    min-width: 70px;
+    min-width: 60px;
   }
   .btn {
     border: none;
-    padding: 5px 10px;
-    border-radius: 14px;
+    padding: 4px 8px;
+    border-radius: 12px;
     background-color: #f1f5f9;
     color: #475569;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -57,10 +57,10 @@
   .btn.active { background-color: #2563eb; color: #ffffff; }
   .search-row { display: flex; justify-content: flex-end; margin-top: 2px; }
   .search-box {
-    padding: 6px 12px;
+    padding: 5px 10px;
     border: 1px solid #cbd5e1;
-    border-radius: 18px;
-    font-size: 13px;
+    border-radius: 16px;
+    font-size: 12px;
     outline: none;
     width: 100%;
   }
@@ -77,34 +77,34 @@
     width: 100%; 
     border-collapse: separate; 
     border-spacing: 0; 
-    min-width: 750px;
+    min-width: 620px;
   }
   th, td { 
-    padding: 8px 6px; 
+    padding: 6px 4px; 
     text-align: left; 
     border-bottom: 1px solid #e1e8ed; 
-    font-size: 11px;
-    line-height: 1.3;
+    font-size: 10.5px;
+    line-height: 1.25;
   }
   th {
     background-color: #34495e;
     color: #ffffff;
     font-weight: bold;
-    font-size: 11px;
+    font-size: 10.5px;
     position: sticky;
     top: 0;
     z-index: 10;
     white-space: nowrap;
   }
 
-  /* 名士名列（1列目）のみ左端に固定 ＆ 幅をスリム化 */
+  /* 名士名列（1列目）の横固定＆スリム化 */
   th:first-child, td:first-child {
     position: sticky;
     left: 0;
     z-index: 5;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.08);
-    width: 4.2em;
-    max-width: 4.2em;
+    box-shadow: 2px 0 4px rgba(0,0,0,0.08);
+    width: 3.8em;
+    max-width: 3.8em;
     word-break: break-all;
     white-space: normal;
   }
@@ -119,39 +119,39 @@
     background-color: #f8f9fa;
   }
 
-  /* 名士名の文字スタイル */
+  /* 名士名スタイル */
   .meishi-name {
     font-weight: bold;
-    font-size: 11px;
+    font-size: 10.5px;
     color: #1e293b;
     line-height: 1.2;
   }
 
   /* タグ装飾 */
-  .rank-badge { display: inline-block; padding: 2px 4px; border-radius: 3px; font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .rank-badge { display: inline-block; padding: 2px 3px; border-radius: 3px; font-size: 9.5px; font-weight: bold; white-space: nowrap; }
   .rank-rare-legend { background-color: #fef3c7; color: #b45309; border: 1px solid #f59e0b; }
-  .type-badge { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 10px; font-weight: bold; background-color: #e2e8f0; color: #334155; white-space: nowrap; }
+  .type-badge { display: inline-block; padding: 2px 4px; border-radius: 3px; font-size: 9.5px; font-weight: bold; background-color: #e2e8f0; color: #334155; white-space: nowrap; }
   
-  .slot-badge { display: inline-block; padding: 2px 4px; border-radius: 3px; font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .slot-badge { display: inline-block; padding: 2px 4px; border-radius: 3px; font-size: 9.5px; font-weight: bold; white-space: nowrap; }
   .slot-1 { background-color: #fee2e2; color: #991b1b; }
   .slot-2 { background-color: #dcfce7; color: #166534; }
   .slot-3 { background-color: #f3e8ff; color: #6b21a8; }
 
-  .badge { display: inline-block; padding: 2px 4px; border-radius: 3px; font-size: 10px; font-weight: bold; color: #fff; margin-right: 2px; white-space: nowrap; }
+  .badge { display: inline-block; padding: 2px 3px; border-radius: 3px; font-size: 9.5px; font-weight: bold; color: #fff; margin-right: 1px; white-space: nowrap; }
   .badge-attack { background-color: #e74c3c; }
   .badge-buff { background-color: #e67e22; }
   .badge-defense { background-color: #2980b9; }
   .badge-produce { background-color: #27ae60; }
   .badge-special { background-color: #8e44ad; }
 
-  /* スキル名列：最大6文字分くらいで自然に折り返す設定 */
+  /* スキル名列 */
   .skill-name { 
     font-weight: bold; 
     color: #2c3e50; 
-    font-size: 11px; 
+    font-size: 10.5px; 
     white-space: normal; 
-    line-height: 1.25; 
-    max-width: 6.5em; 
+    line-height: 1.2; 
+    max-width: 5.5em; 
     word-break: break-all;
   }
 </style>
@@ -164,9 +164,9 @@
   <div class="filter-group">
     <div class="group-title">📌 スキル枠:</div>
     <button class="btn active" onclick="filterSlot('all', this)">すべて</button>
-    <button class="btn" onclick="filterSlot('1', this)">⚔️ 1枠目：戦闘スキル</button>
-    <button class="btn" onclick="filterSlot('2', this)">🌾 2枠目：生産スキル</button>
-    <button class="btn" onclick="filterSlot('3', this)">✨ 3枠目：パッシブスキル</button>
+    <button class="btn" onclick="filterSlot('1', this)">⚔️ 戦闘</button>
+    <button class="btn" onclick="filterSlot('2', this)">🌾 生産</button>
+    <button class="btn" onclick="filterSlot('3', this)">✨ パッシブ</button>
   </div>
 
   <div class="filter-group">
@@ -212,7 +212,7 @@
         <td class="meishi-name">始祖黄帝</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">天断の極意</td>
         <td><span class="badge badge-attack">攻撃・即死</span><span class="badge badge-buff">バフ/デバフ</span></td>
         <td>40%発動: 敵に200%ダメージ / 飛剣で敵名士2人即死 / 味方全攻撃バフ+15% / 敵攻撃デバフ-15% (2ターン持続)</td>
@@ -221,7 +221,7 @@
         <td class="meishi-name">始祖黄帝</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">海国の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>海国編建築任命時、資源生産速度 +40%</td>
@@ -230,7 +230,7 @@
         <td class="meishi-name">始祖黄帝</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">土徳の瑞祥</td>
         <td><span class="badge badge-defense">軽減</span></td>
         <td>低品質名士スキルからの被ダメージ -15%</td>
@@ -241,7 +241,7 @@
         <td class="meishi-name">蚩尤</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">戦獣の咆哮</td>
         <td><span class="badge badge-attack">攻撃・会心</span></td>
         <td>40%発動: 敵に200%ダメージ / 50%の確率でクリティカル(ダメージ2倍)</td>
@@ -250,7 +250,7 @@
         <td class="meishi-name">蚩尤</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">伐採の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>伐採場任命時、資源生産速度 +40%</td>
@@ -259,7 +259,7 @@
         <td class="meishi-name">蚩尤</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">無双の勇</td>
         <td><span class="badge badge-buff">征戦バフ</span></td>
         <td>征戦時、味方全体のダメージバフ +12%</td>
@@ -270,7 +270,7 @@
         <td class="meishi-name">孟子</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">魚、我が欲するところなり</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-defense">軽減</span><span class="badge badge-special">状態異常</span></td>
         <td>40%発動: 敵に200%ダメージ / 50%で「生」(味方ダメ軽減+30% 2ターン持続) / 50%で「義」(敵行動前に120%異常ダメ 2ターン持続)</td>
@@ -279,7 +279,7 @@
         <td class="meishi-name">孟子</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">舗装の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>舗装工場任命時、資源生産速度 +40%</td>
@@ -288,7 +288,7 @@
         <td class="meishi-name">孟子</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">仁者無敵</td>
         <td><span class="badge badge-special">点呼スコア</span></td>
         <td>戦場点呼でブロック削除時のスコア +6%</td>
@@ -299,7 +299,7 @@
         <td class="meishi-name">リンカーン</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">独立宣言</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">謀略バフ</span></td>
         <td>40%発動: 敵に200%ダメージ＋味方謀略+1000 / 味方体力50%未満ならダメ係数+100%、50%以上なら謀略追加+500</td>
@@ -308,7 +308,7 @@
         <td class="meishi-name">リンカーン</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">石油の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>油井任命時、資源生産速度 +40%</td>
@@ -317,7 +317,7 @@
         <td class="meishi-name">リンカーン</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">自由の灯台</td>
         <td><span class="badge badge-special">褒章産出</span></td>
         <td>十大文明における文明の褒章産出 +6%</td>
@@ -328,7 +328,7 @@
         <td class="meishi-name">真田幸村</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">烈火覇王槍</td>
         <td><span class="badge badge-attack">攻撃・行動不能</span></td>
         <td>40%発動: 敵に200%斬撃ダメージ / 50%の確率で「戦慄」状態（行動不能 1ターン持続）</td>
@@ -337,7 +337,7 @@
         <td class="meishi-name">真田幸村</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">製鉄の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>製鉄所任命時、資源生産速度 +40%</td>
@@ -346,7 +346,7 @@
         <td class="meishi-name">真田幸村</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">赤備の威名</td>
         <td><span class="badge badge-buff">泰山バフ</span></td>
         <td>泰山対決・泰山争覇の戦闘時、味方全体のダメージバフ +12%</td>
@@ -357,7 +357,7 @@
         <td class="meishi-name">穆桂英</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">門陣を打ち破る</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">バフ</span><span class="badge badge-special">状態異常</span></td>
         <td>40%発動: 敵に200%ダメージ / 味方の状態異常ダメ+30% / 敵の行動前に120%の状態異常ダメ (2ターン持続)</td>
@@ -366,7 +366,7 @@
         <td class="meishi-name">穆桂英</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">栽培の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>農園任命時、資源生産速度 +40%</td>
@@ -375,7 +375,7 @@
         <td class="meishi-name">穆桂英</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">元帥</td>
         <td><span class="badge badge-special">軍隊上限</span></td>
         <td>燕雲烽火の中、全軍隊の上限数が +30% 増加</td>
@@ -386,7 +386,7 @@
         <td class="meishi-name">岳飛</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">破虜の神槍</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">デバフ</span></td>
         <td>40%発動: 敵に200%ダメージ / 敵に「恐怖」付与 (行動前100%ダメ＆攻撃力-15% 2ターン持続)</td>
@@ -395,7 +395,7 @@
         <td class="meishi-name">岳飛</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">舗装の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>舗装工場任命時、資源生産速度 +40%</td>
@@ -404,7 +404,7 @@
         <td class="meishi-name">岳飛</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">直接突進</td>
         <td><span class="badge badge-buff">泰山バフ</span></td>
         <td>泰山対決・泰山争覇の戦闘時、味方全体のダメージバフ +12%</td>
@@ -415,7 +415,7 @@
         <td class="meishi-name">五竹</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">レーザーアイ</td>
         <td><span class="badge badge-attack">攻撃・消滅</span></td>
         <td>40%発動: 敵に200%ダメージ / 敵前列1人を溶かし、30%で拡散してさらに前列1人を溶かす</td>
@@ -424,7 +424,7 @@
         <td class="meishi-name">五竹</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">合金達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>合金工場任命時、資源生産速度 +40%</td>
@@ -433,7 +433,7 @@
         <td class="meishi-name">五竹</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">大宗師の訓練</td>
         <td><span class="badge badge-buff">特定キャラ強化</span></td>
         <td>范閑の攻撃力と体力 +15%</td>
@@ -444,7 +444,7 @@
         <td class="meishi-name">アインシュタイン</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">時空の歪み</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-defense">シールド</span></td>
         <td>40%発動: 敵に200%ダメージ / 味方に最大体力20%のシールド付与＋超過回復をシールド変換 (3ターン持続)</td>
@@ -453,7 +453,7 @@
         <td class="meishi-name">アインシュタイン</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">合金達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>合金工場任命時、資源生産速度 +40%</td>
@@ -462,17 +462,18 @@
         <td class="meishi-name">アインシュタイン</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">相対性理論</td>
         <td><span class="badge badge-special">発電バフ</span></td>
         <td>発電所が通電建築に与える生産速度バフ +6%</td>
       </tr>
+
       <!-- 范閑 -->
       <tr data-slot="1" data-type="弓" data-rank="伝説(希少)">
         <td class="meishi-name">范閑</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">致命的狙撃</td>
         <td><span class="badge badge-attack">攻撃・追撃</span></td>
         <td>40%発動: 敵に200%ダメージ / 55%で200%追加ダメ (敵体力20%未満で追加ダメがクリティカル化)</td>
@@ -481,7 +482,7 @@
         <td class="meishi-name">范閑</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">中州達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>中州編建築任命時、資源生産速度 +40%</td>
@@ -490,7 +491,7 @@
         <td class="meishi-name">范閑</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">詩名天下に轟く</td>
         <td><span class="badge badge-defense">軽減</span></td>
         <td>低品質名士スキルからの被ダメージ -15%</td>
@@ -501,7 +502,7 @@
         <td class="meishi-name">始皇帝</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">秦軍侵攻</td>
         <td><span class="badge badge-attack">攻撃・先制</span><span class="badge badge-buff">デバフ</span></td>
         <td>前列配置時先制攻撃。40%発動: 敵に200%ダメージ＋被ダメージ+50% (3ターン持続)</td>
@@ -510,7 +511,7 @@
         <td class="meishi-name">始皇帝</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">砂採取の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>砂利採取場任命時、資源生産速度 +40%</td>
@@ -519,18 +520,17 @@
         <td class="meishi-name">始皇帝</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">天下統一</td>
         <td><span class="badge badge-buff">全体バフ</span></td>
         <td>あらゆる戦闘で味方全体のダメージバフ +6%</td>
       </tr>
-
       <!-- 諸葛亮 -->
       <tr data-slot="1" data-type="弓" data-rank="伝説(希少)">
         <td class="meishi-name">諸葛亮</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">連弩の奇襲</td>
         <td><span class="badge badge-attack">攻撃・連撃</span></td>
         <td>40%発動: 敵に200%ダメージ / 50%の確率で連弩が再度発射され200%追加ダメージ</td>
@@ -539,7 +539,7 @@
         <td class="meishi-name">諸葛亮</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">製紙の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>製紙場任命時、資源生産速度 +40%</td>
@@ -548,7 +548,7 @@
         <td class="meishi-name">諸葛亮</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">奇策妙計</td>
         <td><span class="badge badge-buff">謀略/蛮族バフ</span></td>
         <td>戦闘開始時に味方謀略+1500 / 蛮族侵入防御時、味方全体のダメージバフ +12%</td>
@@ -559,7 +559,7 @@
         <td class="meishi-name">姜子牙</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">餌食</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">デバフ</span><span class="badge badge-special">罠</span></td>
         <td>40%発動: 敵に200%ダメージ＋罠付与 (敵の次3回行動前50%で120%ダメ＆ダメ軽減-20%)</td>
@@ -568,7 +568,7 @@
         <td class="meishi-name">姜子牙</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">銅採掘の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>鉱山場任命時、資源生産速度 +40%</td>
@@ -577,7 +577,7 @@
         <td class="meishi-name">姜子牙</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">優れた謀略</td>
         <td><span class="badge badge-special">巡回土地</span></td>
         <td>領地巡回での土地獲得量 +6%</td>
@@ -588,7 +588,7 @@
         <td class="meishi-name">チンギス・ハン</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">大弓射鷹</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">背水バフ</span><span class="badge badge-special">連撃</span></td>
         <td>40%発動: 敵に200%ダメ (味方HP20%消失毎にダメバフ+20% 1ターン持続) / 30%で再発動 (敵HP50%未満で100%再発動)</td>
@@ -597,7 +597,7 @@
         <td class="meishi-name">チンギス・ハン</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">舗装の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>舗装工場任命時、資源生産速度 +40%</td>
@@ -606,7 +606,7 @@
         <td class="meishi-name">チンギス・ハン</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">一代の英雄</td>
         <td><span class="badge badge-buff">全体バフ</span></td>
         <td>全ての帝王・名士の攻撃力と体力が +6%</td>
@@ -617,7 +617,7 @@
         <td class="meishi-name">ダ・ヴィンチ</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">絵当て</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-special">追撃/回復</span></td>
         <td>40%発動: 敵に200%ダメ / モナ・リザ判定 (50%で150%追撃ダメ、50%で味方最大HP15%回復)</td>
@@ -626,7 +626,7 @@
         <td class="meishi-name">ダ・ヴィンチ</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">栽培の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>農園任命時、資源生産速度 +40%</td>
@@ -635,7 +635,7 @@
         <td class="meishi-name">ダ・ヴィンチ</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">芸術の達人</td>
         <td><span class="badge badge-defense">泰山軽減</span></td>
         <td>泰山対決・泰山争覇の戦闘時、味方全体のダメージ軽減 +12%</td>
@@ -646,7 +646,7 @@
         <td class="meishi-name">周瑜</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">赤壁の炎</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">デバフ</span><span class="badge badge-special">状態異常</span></td>
         <td>40%発動: 敵に200%ダメ / 敵行動前に120%異常ダメ＆謀略値-800 (2ターン持続)</td>
@@ -655,7 +655,7 @@
         <td class="meishi-name">周瑜</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">銅採掘の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>鉱山場任命時、資源生産速度 +40%</td>
@@ -664,7 +664,7 @@
         <td class="meishi-name">周瑜</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">周郎の才気</td>
         <td><span class="badge badge-special">軍隊上限</span></td>
         <td>赤壁の戦いで全軍隊の上限数 +30%</td>
@@ -675,7 +675,7 @@
         <td class="meishi-name">郭嘉</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">破局鬼謀</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-defense">シールド</span><span class="badge badge-buff">謀略バフ</span></td>
         <td>40%発動: 敵に200%ダメ / 続く2ターンの間、各ターン開始時に味方最大HP15%シールド＆謀略+800</td>
@@ -684,7 +684,7 @@
         <td class="meishi-name">郭嘉</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">製紙の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>製紙場任命時、資源生産速度 +40%</td>
@@ -693,7 +693,7 @@
         <td class="meishi-name">郭嘉</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">天賦の才</td>
         <td><span class="badge badge-special">軍隊上限</span></td>
         <td>官渡の戦いにおいて、全軍隊の上限数 +30%</td>
@@ -704,7 +704,7 @@
         <td class="meishi-name">孫権</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">江火焚天</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">火ダメバフ</span><span class="badge badge-special">燃焼</span></td>
         <td>40%発動: 敵に200%ダメ＋燃焼 (敵攻撃前に攻撃力80%ダメ 2ターン持続)。油効果で敵火属性被ダメ+10% (2ターン持続)</td>
@@ -713,7 +713,7 @@
         <td class="meishi-name">孫権</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">陶磁器の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>陶器屋任命時、資源生産速度 +40%</td>
@@ -722,17 +722,18 @@
         <td class="meishi-name">孫権</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">弓</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">軍の倉庫</td>
         <td><span class="badge badge-produce">生産バフ</span></td>
         <td>全名士の任命後基礎生産量 +15%</td>
       </tr>
+
       <!-- 帝王伏羲 -->
       <tr data-slot="1" data-type="盾" data-rank="伝説(希少)">
         <td class="meishi-name">帝王伏羲</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">破邪八卦陣</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-special">戴武/回復</span></td>
         <td>40%発動: 敵に200%ダメ＋「戴武」(行動前120%異常ダメ 2ターン持続。敵状態伏策ダメの5%が味方HPに転換)</td>
@@ -741,7 +742,7 @@
         <td class="meishi-name">帝王伏羲</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">中州達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>中州編建築任命時、資源生産速度 +40%</td>
@@ -750,7 +751,7 @@
         <td class="meishi-name">帝王伏羲</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">先天霊気</td>
         <td><span class="badge badge-defense">軽減</span></td>
         <td>自身より品質の低い名士からのスキル被ダメージ -15%</td>
@@ -761,7 +762,7 @@
         <td class="meishi-name">武則天</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">無字の天碑</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-special">回復</span><span class="badge badge-defense">軽減</span></td>
         <td>40%発動: 敵に200%ダメ / 味方HPを最大HP25%分回復＋ダメージ軽減+20% (3ターン持続)</td>
@@ -770,7 +771,7 @@
         <td class="meishi-name">武則天</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">採石の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>採石場任命時、資源生産速度 +40%</td>
@@ -779,7 +780,7 @@
         <td class="meishi-name">武則天</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">謀略の女帝</td>
         <td><span class="badge badge-special">時空探検</span></td>
         <td>時空探検のまとめて挑戦の報酬 +6%</td>
@@ -790,7 +791,7 @@
         <td class="meishi-name">孔子</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">聖人の戒め</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-defense">シールド</span><span class="badge badge-buff">敵バフ</span></td>
         <td>40%発動: 敵に200%ダメ / 敵は最大HP20%シールド＆ダメバフ+20%獲得 (3ターン持続)</td>
@@ -799,7 +800,7 @@
         <td class="meishi-name">孔子</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">農業の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>農園任命時、資源生産速度 +40%</td>
@@ -808,7 +809,7 @@
         <td class="meishi-name">孔子</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">仁義礼智信</td>
         <td><span class="badge badge-defense">泰山軽減</span></td>
         <td>泰山対決・泰山争覇の戦闘時、味方全体のダメージ軽減 +16%</td>
@@ -819,7 +820,7 @@
         <td class="meishi-name">唐太宗</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">天子の加護</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-defense">軽減</span><span class="badge badge-special">持続ダメ</span></td>
         <td>40%発動: 敵に200%ダメ / 秦瓊と尉遅恭が味方の被ダメ-30%、毎ターン開始時敵に100%ダメ (3ターン持続)</td>
@@ -828,7 +829,7 @@
         <td class="meishi-name">唐太宗</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">紡績の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>絹織物屋任命時、資源生産速度 +40%</td>
@@ -837,18 +838,17 @@
         <td class="meishi-name">唐太宗</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">凌煙閣</td>
         <td><span class="badge badge-defense">全体軽減</span></td>
         <td>あらゆる戦闘において、味方全体のダメージ軽減 +6%</td>
       </tr>
-
       <!-- 荘子 -->
       <tr data-slot="1" data-type="盾" data-rank="伝説(希少)">
         <td class="meishi-name">荘子</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">夢蝶</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">デバフ</span><span class="badge badge-special">スキル不可</span></td>
         <td>40%発動: 敵に200%ダメ＋「夢蝶幻境」(被ダメ-24% 3ターン持続、次ターン40%でスキル使用不可)</td>
@@ -857,7 +857,7 @@
         <td class="meishi-name">荘子</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">栽培の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>農園任命時、資源生産速度 +40%</td>
@@ -866,7 +866,7 @@
         <td class="meishi-name">荘子</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">逍遙遊</td>
         <td><span class="badge badge-special">宅地売却</span></td>
         <td>宅地の波乱中、家屋の売却価格 +6%</td>
@@ -877,8 +877,8 @@
         <td class="meishi-name">孫武</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
-        <td class="skill-name">進攻の謀略</td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
+        <td class="skill-name">進構の謀略</td>
         <td><span class="badge badge-attack">攻撃・追撃</span></td>
         <td>40%発動: 敵に200%ダメ / 優勢を勝ち取り、次の行動時のダメージがさらに +100%</td>
       </tr>
@@ -886,7 +886,7 @@
         <td class="meishi-name">孫武</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">製鉄の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>製鉄所任命時、資源生産速度 +40%</td>
@@ -895,7 +895,7 @@
         <td class="meishi-name">孫武</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">兵法の聖人</td>
         <td><span class="badge badge-buff">遠征バフ</span></td>
         <td>遠征中の軍隊の実力 +6%</td>
@@ -906,7 +906,7 @@
         <td class="meishi-name">ニュートン</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">万物因果</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-special">幻覚/自傷</span></td>
         <td>40%発動: 敵に200%ダメ / 50%で「幻覚」状態 (行動時自傷、1回分通常攻撃を行う 1ターン持続)</td>
@@ -915,7 +915,7 @@
         <td class="meishi-name">ニュートン</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">製鋼の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>製鋼所任命時、資源生産速度 +40%</td>
@@ -924,7 +924,7 @@
         <td class="meishi-name">ニュートン</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">科学の巨匠</td>
         <td><span class="badge badge-special">技能研究</span></td>
         <td>技能研究に必要な時間 -6%</td>
@@ -935,7 +935,7 @@
         <td class="meishi-name">宋太祖</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">杯酒釈兵権</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">デバフ</span><span class="badge badge-special">スキル不可</span></td>
         <td>40%発動: 敵200%ダメ / 味方デバフ1個解除 (1個毎敵ダメ軽減-30%) / ランダム5〜8人今回戦闘中スキル不可</td>
@@ -944,7 +944,7 @@
         <td class="meishi-name">宋太祖</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">石炭採掘の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>炭鉱任命時、資源生産速度 +40%</td>
@@ -953,7 +953,7 @@
         <td class="meishi-name">宋太祖</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">皇帝即位</td>
         <td><span class="badge badge-buff">役戦バフ</span></td>
         <td>役戦で味方の実力 +6%</td>
@@ -964,7 +964,7 @@
         <td class="meishi-name">劉備</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">雌雄双剣</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">バフ</span><span class="badge badge-special">回復</span></td>
         <td>40%発動: 敵200%ダメ / 味方士気高揚＆回復効果+10% / 毎ターン開始時最大HP10%回復 (3ターン持続)</td>
@@ -973,7 +973,7 @@
         <td class="meishi-name">劉備</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">製紙の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>製紙場任命時、資源生産速度 +40%</td>
@@ -982,17 +982,18 @@
         <td class="meishi-name">劉備</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">盾</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">徳をもって人に接する</td>
         <td><span class="badge badge-special">顧問バフ</span></td>
         <td>顧問の自動選抜時に指定名士と資源バフを獲得する確率 +0.5倍</td>
       </tr>
+
       <!-- 万霊・女媧 -->
       <tr data-slot="1" data-type="騎" data-rank="伝説(希少)">
         <td class="meishi-name">万霊・女媧</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">元君の聖威</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-special">回復/無効</span></td>
         <td>40%発動: 敵200%ダメ / 味方HP25%回復(超過分はシールド) / 味方に「万物創生」(軽減+15%・致命ダメ無効・次2ターン被ダメ15%分全体回復)</td>
@@ -1001,7 +1002,7 @@
         <td class="meishi-name">万霊・女媧</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">海国の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>海国編建築任命時、資源生産速度 +40%</td>
@@ -1010,18 +1011,17 @@
         <td class="meishi-name">万霊・女媧</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">万霊への恩恵</td>
         <td><span class="badge badge-defense">軽減</span></td>
         <td>自身より品質の低い名士からのスキル被ダメージ -15%</td>
       </tr>
-
       <!-- 老子 -->
       <tr data-slot="1" data-type="騎" data-rank="伝説(希少)">
         <td class="meishi-name">老子</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">道は自然に従う</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">バフ/継続ダメ</span></td>
         <td>40%発動: 敵200%ダメ＋3種効果（①人:味方軽減+40% 3ターン、②地:味方ダメバフ+40% 3ターン、③天:毎ターン敵80%ダメ 3ターン）を確率付与</td>
@@ -1030,7 +1030,7 @@
         <td class="meishi-name">老子</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">砂採取の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>砂利採取場任命時、資源生産速度 +40%</td>
@@ -1039,7 +1039,7 @@
         <td class="meishi-name">老子</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">無為の治</td>
         <td><span class="badge badge-buff">探訪バフ</span></td>
         <td>五岳探訪中、味方のダメージ増加およびダメージ軽減 +6%</td>
@@ -1050,7 +1050,7 @@
         <td class="meishi-name">項羽</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">覇王の力</td>
         <td><span class="badge badge-attack">攻撃・追撃</span><span class="badge badge-buff">バフ</span></td>
         <td>40%発動: 敵200%ダメ＋攻撃力30%分のダメバフ＋50%の確率で150%の追加ダメージ</td>
@@ -1059,7 +1059,7 @@
         <td class="meishi-name">項羽</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">畜産の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>牧場任命時、資源生産速度 +40%</td>
@@ -1068,7 +1068,7 @@
         <td class="meishi-name">項羽</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">覇王の威</td>
         <td><span class="badge badge-buff">時空探検バフ</span></td>
         <td>時空探検中、味方全体のダメージバフ +12%</td>
@@ -1079,7 +1079,7 @@
         <td class="meishi-name">ナポレオン</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">重砲の洗礼</td>
         <td><span class="badge badge-attack">全体攻撃</span><span class="badge badge-buff">デバフ</span><span class="badge badge-special">スキル不可</span></td>
         <td>40%発動: 敵全体200%ダメ / 敵の防御値破損＆ダメ軽減-20% (2ターン持続) / 敵3人のスキル発動不可 (2ターン持続)</td>
@@ -1088,7 +1088,7 @@
         <td class="meishi-name">ナポレオン</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">火器の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>火器屋任命時、資源生産速度 +40%</td>
@@ -1097,7 +1097,7 @@
         <td class="meishi-name">ナポレオン</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">王者の風格</td>
         <td><span class="badge badge-buff">遠征バフ</span></td>
         <td>世界遠征中に実力 +6%</td>
@@ -1108,7 +1108,7 @@
         <td class="meishi-name">呂布</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">天下無双</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">バフ/デバフ</span><span class="badge badge-special">シールド貫通</span></td>
         <td>40%発動: 敵200%ダメ＋攻撃バフ30%＋ダメ40%分シールド貫通＋敵ダメ軽減-30% (3ターン持続)</td>
@@ -1117,7 +1117,7 @@
         <td class="meishi-name">呂布</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">採石の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>採石場任命時、資源生産速度 +40%</td>
@@ -1126,7 +1126,7 @@
         <td class="meishi-name">呂布</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">飛将の威</td>
         <td><span class="badge badge-special">軍隊上限</span></td>
         <td>薫卓討伐において、全軍隊の上限数 +30%</td>
@@ -1137,7 +1137,7 @@
         <td class="meishi-name">曹操</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">七星宝刀</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-special">反射</span></td>
         <td>40%発動: 敵200%ダメ＋「我を失望させることは許さん」(敵対象の怒りによりスキルダメ受ける際、15%ダメ反撃 3ターン持続)</td>
@@ -1146,7 +1146,7 @@
         <td class="meishi-name">曹操</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">製茶の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>茶園任命時、資源生産速度 +40%</td>
@@ -1155,7 +1155,7 @@
         <td class="meishi-name">曹操</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">乱世の梟雄</td>
         <td><span class="badge badge-special">軍隊上限</span></td>
         <td>三国の覇者において、全軍隊の上限数 +30%</td>
@@ -1166,7 +1166,7 @@
         <td class="meishi-name">関羽</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">飛龍天翔</td>
         <td><span class="badge badge-attack">攻撃・連撃</span></td>
         <td>40%発動: 敵200%ダメ / 初2Tは発動率2倍 / 2T以内再発動時200%追加ダメ / 2T後発動時50%追加ダメ</td>
@@ -1175,7 +1175,7 @@
         <td class="meishi-name">関羽</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">砂採取の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>砂利採取場任命時、資源生産速度 +40%</td>
@@ -1184,7 +1184,7 @@
         <td class="meishi-name">関羽</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">単騎千里を走る</td>
         <td><span class="badge badge-special">通貨獲得</span></td>
         <td>シルクロードの通商を無料加速させると獲得通貨 +6%</td>
@@ -1195,7 +1195,7 @@
         <td class="meishi-name">漢武帝</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
+        <td><span class="slot-badge slot-1">戦闘</span></td>
         <td class="skill-name">天威疾風</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">バフ解除</span><span class="badge badge-special">召喚</span></td>
         <td>40%発動: 敵200%ダメ＋敵増益解除1〜3個(1個毎ダメ+30%)。霍去病出陣中等で50%確率で雲長召喚(戦闘中1回)</td>
@@ -1204,7 +1204,7 @@
         <td class="meishi-name">漢武帝</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
+        <td><span class="slot-badge slot-2">生産</span></td>
         <td class="skill-name">製紙の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>製紙場任命時、資源生産速度 +40%</td>
@@ -1213,7 +1213,7 @@
         <td class="meishi-name">漢武帝</td>
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">騎</span></td>
-        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
+        <td><span class="slot-badge slot-3">パッシブ</span></td>
         <td class="skill-name">千里の逐敵</td>
         <td><span class="badge badge-buff">漠北バフ</span></td>
         <td>漠北対決時に味方全体の与ダメージとダメージ軽減がそれぞれ +6%</td>
