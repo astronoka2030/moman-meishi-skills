@@ -1315,6 +1315,53 @@
   </table>
 </div>
 
+<style>
+  .feedback-container {
+    max-width: 1100px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  .feedback-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 8px;
+  }
+  .feedback-textarea {
+    width: 100%;
+    height: 70px;
+    padding: 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 12px;
+    box-sizing: border-box;
+    resize: vertical;
+    outline: none;
+  }
+  .feedback-btn {
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+  }
+  .feedback-btn:hover { background-color: #1d4ed8; }
+  .feedback-clearfix::after { content: ""; clear: both; display: table; }
+</style>
+
+<div class="feedback-container feedback-clearfix">
+  <div class="feedback-title">💬 修正希望・メッセージ送信用</div>
+  <textarea id="feedbackText" class="feedback-textarea" placeholder="修正希望や追加情報があればこちらに入力してください..."></textarea>
+  <button type="button" class="feedback-btn" onclick="sendToDiscord()">送信する</button>
+</div>
 <script>
   // 設定済みのDiscord Webhook URL
   const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1561392217019645952/3Ti1eqZdbtsJe9rfzFPesWPPn1w_ehfi-JzKo-QLnE7ozirTDam7s_8U7u53q1HoBLdn";
