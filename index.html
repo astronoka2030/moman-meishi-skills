@@ -65,6 +65,7 @@
     width: 100%;
     max-width: 250px;
   }
+    /* テーブル全体の固定幅制限を解除して画面幅に収める */
   .table-container {
     max-width: 1100px;
     margin: 0 auto;
@@ -72,30 +73,40 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     overflow-x: auto;
-    position: relative;
   }
-  table { width: 100%; border-collapse: separate; border-spacing: 0; min-width: 850px; }
-  th, td { padding: 12px 10px; text-align: left; border-bottom: 1px solid #e1e8ed; }
+  table { 
+    width: 100%; 
+    border-collapse: separate; 
+    border-spacing: 0; 
+    min-width: 100%; /* 横スクロールを防ぐため100%に指定 */
+    table-layout: fixed; /* 列幅を固定してはみ出しを防止 */
+  }
+  th, td { 
+    padding: 8px 6px; /* 上下左右の余白を小さく */
+    text-align: left; 
+    border-bottom: 1px solid #e1e8ed; 
+    font-size: 11px; /* 全体の文字サイズを小さく */
+    line-height: 1.3;
+    word-break: break-all;
+  }
   th {
     background-color: #34495e;
     color: #ffffff;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 12px;
     position: sticky;
     top: 0;
     z-index: 10;
   }
 
-   /* 名士名列（1列目）の横固定 ＆ 5文字折り返し設定 */
+  /* 名士名列（1列目）の横幅固定・幅狭設定 */
   th:first-child, td:first-child {
     position: sticky;
     left: 0;
     z-index: 5;
     box-shadow: 2px 0 5px rgba(0,0,0,0.08);
-
-    /* 幅を5文字強に制限し、はみ出る場合は折り返し */
-    width: 5.5em;
-    max-width: 5.5em;
+    width: 4.2em;      /* 4文字程度に縮小 */
+    max-width: 4.2em;
     word-break: break-all;
     white-space: normal;
   }
@@ -110,11 +121,11 @@
     background-color: #f8f9fa;
   }
 
-  /* 名士名の文字装飾（white-space: nowrap を削除して折り返し可能に） */
+  /* 名士名の文字サイズ調整 */
   .meishi-name {
     font-weight: bold;
-    font-size: 13px;
-    line-height: 1.3;
+    font-size: 11px;
+    line-height: 1.2;
   }
 
   /* タグ装飾 */
