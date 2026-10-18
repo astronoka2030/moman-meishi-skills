@@ -70,7 +70,7 @@
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    overflow-x: auto; /* 横スクロール可能 */
+    overflow-x: auto;
     position: relative;
   }
   table { 
@@ -97,7 +97,7 @@
     white-space: nowrap;
   }
 
-  /* 名士名列（1列目）のみ左端に固定 ＆ 幅を約4文字分にスリム化 */
+  /* 名士名列（1列目）のみ左端に固定 ＆ 幅をスリム化 */
   th:first-child, td:first-child {
     position: sticky;
     left: 0;
@@ -144,8 +144,16 @@
   .badge-produce { background-color: #27ae60; }
   .badge-special { background-color: #8e44ad; }
 
-  /* スキル名（<br>での改行を許可） */
-  .skill-name { font-weight: bold; color: #2c3e50; font-size: 11px; white-space: normal; line-height: 1.2; }
+  /* スキル名列：最大6文字分くらいで自然に折り返す設定 */
+  .skill-name { 
+    font-weight: bold; 
+    color: #2c3e50; 
+    font-size: 11px; 
+    white-space: normal; 
+    line-height: 1.25; 
+    max-width: 6.5em; 
+    word-break: break-all;
+  }
 </style>
 </head>
 <body>
@@ -263,7 +271,7 @@
         <td><span class="rank-badge rank-rare-legend">伝説(希少)</span></td>
         <td><span class="type-badge">槍</span></td>
         <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
-        <td class="skill-name">魚、我が欲する<br>ところなり</td>
+        <td class="skill-name">魚、我が欲するところなり</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-defense">軽減</span><span class="badge badge-special">状態異常</span></td>
         <td>40%発動: 敵に200%ダメージ / 50%で「生」(味方ダメ軽減+30% 2ターン持続) / 50%で「義」(敵行動前に120%異常ダメ 2ターン持続)</td>
       </tr>
