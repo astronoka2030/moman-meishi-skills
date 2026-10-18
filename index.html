@@ -1316,6 +1316,44 @@
 </div>
 
 <script>
+  // 設定済みのDiscord Webhook URL
+  const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1561392217019645952/3Ti1eqZdbtsJe9rfzFPesWPPn1w_ehfi-JzKo-QLnE7ozirTDam7s_8U7u53q1HoBLdn";
+
+  async function sendToDiscord() {
+    const textInput = document.getElementById('feedbackText');
+    const message = textInput.value.trim();
+
+    if (!message) {
+      alert("メッセージを入力してください。");
+      return;
+    }
+
+    const payload = {
+      content: `【名士スキル一覧 修正希望・メッセージ】\n${message}`
+    };
+
+    try {
+      const response = await fetch(DISCORD_WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+
+      if (response.ok) {
+        alert("あすとろへ送信しました！ありがとうございます。");
+        textInput.value = "";
+      } else {
+        alert("送信に失敗しました。時間をおいて再度お試しください。");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("送信中にエラーが発生しました。");
+    }
+  }
+</script>
+
+
+<script>
   let currentSlot = 'all', currentType = 'all', currentRank = 'all', currentCategory = 'all';
 
   function filterSlot(slot, btn) { currentSlot = slot; updateActiveButton(btn); applyFilters(); }
