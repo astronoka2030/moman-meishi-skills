@@ -86,12 +86,18 @@
     z-index: 10;
   }
 
-  /* 名士名列（1列目）の横固定設定 */
+   /* 名士名列（1列目）の横固定 ＆ 5文字折り返し設定 */
   th:first-child, td:first-child {
     position: sticky;
     left: 0;
     z-index: 5;
     box-shadow: 2px 0 5px rgba(0,0,0,0.08);
+
+    /* 幅を5文字強に制限し、はみ出る場合は折り返し */
+    width: 5.5em;
+    max-width: 5.5em;
+    word-break: break-all;
+    white-space: normal;
   }
   th:first-child {
     background-color: #2c3e50;
@@ -102,6 +108,13 @@
   }
   tr:hover td:first-child {
     background-color: #f8f9fa;
+  }
+
+  /* 名士名の文字装飾（white-space: nowrap を削除して折り返し可能に） */
+  .meishi-name {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 1.3;
   }
 
   /* タグ装飾 */
