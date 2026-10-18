@@ -1315,6 +1315,7 @@
   </table>
 </div>
 
+<!-- メッセージ＆画像送信エリア -->
 <style>
   .feedback-container {
     max-width: 1100px;
@@ -1340,9 +1341,13 @@
     box-sizing: border-box;
     resize: vertical;
     outline: none;
+    margin-bottom: 8px;
+  }
+  .feedback-file-input {
+    font-size: 11px;
+    color: #475569;
   }
   .feedback-btn {
-    margin-top: 8px;
     padding: 8px 16px;
     background-color: #2563eb;
     color: #ffffff;
@@ -1360,35 +1365,46 @@
 <div class="feedback-container feedback-clearfix">
   <div class="feedback-title">💬 修正希望・メッセージ送信用</div>
   <textarea id="feedbackText" class="feedback-textarea" placeholder="修正希望や追加情報があればこちらに入力してください..."></textarea>
+  <input type="file" id="feedbackImage" class="feedback-file-input" accept="image/*">
   <button type="button" class="feedback-btn" onclick="sendToDiscord()">送信する</button>
 </div>
+
 <script>
-  // 設定済みのDiscord Webhook URL
   const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1561392217019645952/3Ti1eqZdbtsJe9rfzFPesWPPn1w_ehfi-JzKo-QLnE7ozirTDam7s_8U7u53q1HoBLdn";
 
   async function sendToDiscord() {
     const textInput = document.getElementById('feedbackText');
+    const imageInput = document.getElementById('feedbackImage');
+    
     const message = textInput.value.trim();
+    const file = imageInput.files[0];
 
-    if (!message) {
-      alert("メッセージを入力してください。");
+    if (!message && !file) {
+      alert("メッセージまたは画像を選択してください。");
       return;
     }
 
+    const formData = new FormData();
     const payload = {
-      content: `【名士スキル一覧 修正希望・メッセージ】\n${message}`
+      content: `【名士スキル一覧 修正希望・メッセージ】\n${message || "（画像のみ送信）"}`
     };
+
+    formData.append("payload_json", JSON.stringify(payload));
+
+    if (file) {
+      formData.append("file", file, file.name);
+    }
 
     try {
       const response = await fetch(DISCORD_WEBHOOK_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload)
+        body: formData
       });
 
       if (response.ok) {
         alert("あすとろへ送信しました！ありがとうございます。");
         textInput.value = "";
+        imageInput.value = ""; // ファイル選択をクリア
       } else {
         alert("送信に失敗しました。時間をおいて再度お試しください。");
       }
@@ -1398,7 +1414,6 @@
     }
   }
 </script>
-
 
 <script>
   let currentSlot = 'all', currentType = 'all', currentRank = 'all', currentCategory = 'all';
