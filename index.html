@@ -77,12 +77,8 @@
     background-color: #34495e;
     color: #ffffff;
     font-weight: bold;
-    cursor: pointer;
-    user-select: none;
     font-size: 13px;
   }
-  th:hover { background-color: #2c3e50; }
-  th::after { content: " ⇅"; font-size: 10px; opacity: 0.6; }
   tr:hover { background-color: #f8f9fa; }
 
   /* タグ装飾 */
@@ -146,12 +142,12 @@
   <table id="skillsTable">
     <thead>
       <tr>
-        <th onclick="sortTable(0)">名士名</th>
-        <th onclick="sortTable(1)">ランク</th>
-        <th onclick="sortTable(2)">兵種</th>
-        <th onclick="sortTable(3)">スキル枠</th>
-        <th onclick="sortTable(4)">スキル名</th>
-        <th onclick="sortTable(5)">効果分類</th>
+        <th>名士名</th>
+        <th>ランク</th>
+        <th>兵種</th>
+        <th>スキル枠</th>
+        <th>スキル名</th>
+        <th>効果分類</th>
         <th>Lv.1 スキル効果概要</th>
       </tr>
     </thead>
@@ -452,21 +448,6 @@
 
       row.style.display = (matchSlot && matchType && matchRank && matchSearch) ? '' : 'none';
     });
-  }
-
-  let sortDirection = false;
-  function sortTable(columnIndex) {
-    const tbody = document.querySelector("#skillsTable tbody");
-    const rows = Array.from(tbody.querySelectorAll("tr"));
-    sortDirection = !sortDirection;
-
-    rows.sort((a, b) => {
-      const cellA = a.children[columnIndex].innerText.trim();
-      const cellB = b.children[columnIndex].innerText.trim();
-      return sortDirection ? cellA.localeCompare(cellB, 'ja') : cellB.localeCompare(cellA, 'ja');
-    });
-
-    rows.forEach(row => tbody.appendChild(row));
   }
 </script>
 
