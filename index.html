@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>モーマンタイム 名士スキル一覧</title>
+<style>
+  body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+  }
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  .table-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow-x: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+  }
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e1e8ed;
+  }
+  th {
+    background-color: #34495e;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  tr:hover {
+    background-color: #f8f9fa;
+  }
+  /* カテゴリ別バッジの色分け */
+  .badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .badge-attack { background-color: #e74c3c; } /* 直接攻撃・即死 */
+  .badge-buff { background-color: #e67e22; }   /* バフ・デバフ */
+  .badge-defense { background-color: #2980b9; }/* 軽減・防御 */
+  .badge-produce { background-color: #27ae60; }/* 生産・経営 */
+  .badge-special { background-color: #8e44ad; }/* スコア・特殊 */
+
+  .skill-name {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  .meishi-name {
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<h1>🎴 名士スキル分類一覧表</h1>
+
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>名士名</th>
+        <th>スキル名</th>
+        <th>効果カテゴリ</th>
+        <th>主な効果・特徴</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 始祖黄帝 -->
+      <tr>
+        <td class="meishi-name">始祖黄帝</td>
+        <td class="skill-name">天断の極意</td>
+        <td><span class="badge badge-attack">攻撃・即死</span> <span class="badge badge-buff">バフ/デバフ</span></td>
+        <td>敵に攻撃力200%~ダメージ / 飛剣で敵名士2人をランダム即死 / 味方全攻撃バフ+15% / 敵攻撃デバフ-15%（2ターン）</td>
+      </tr>
+      <tr>
+        <td class="meishi-name">始祖黄帝</td>
+        <td class="skill-name">海国の達人</td>
+        <td><span class="badge badge-produce">生産</span></td>
+        <td>海国編の建築任命時、資源生産速度 +40%〜+56%</td>
+      </tr>
+      <tr>
+        <td class="meishi-name">始祖黄帝</td>
+        <td class="skill-name">土徳の瑞祥</td>
+        <td><span class="badge badge-defense">軽減</span></td>
+        <td>自身より低品質な名士スキルから受けるダメージを -15%〜-30% 軽減</td>
+      </tr>
+
+      <!-- 蚩尤 -->
+      <tr>
+        <td class="meishi-name">蚩尤</td>
+        <td class="skill-name">戦獣の咆哮</td>
+        <td><span class="badge badge-attack">攻撃・クリティカル</span></td>
+        <td>敵に攻撃力200%~ダメージ / 50%以上の確率でクリティカル発動（ダメージ2倍）</td>
+      </tr>
+      <tr>
+        <td class="meishi-name">蚩尤</td>
+        <td class="skill-name">伐採の達人</td>
+        <td><span class="badge badge-produce">生産</span></td>
+        <td>伐採場に任命時、資源生産速度 +40%〜+56%</td>
+      </tr>
+      <tr>
+        <td class="meishi-name">蚩尤</td>
+        <td class="skill-name">無双の勇</td>
+        <td><span class="badge badge-buff">全体バフ</span></td>
+        <td>征戦時、味方全体のダメージバフ +12%〜+28%</td>
+      </tr>
+
+      <!-- 孟子 -->
+      <tr>
+        <td class="meishi-name">孟子</td>
+        <td class="skill-name">魚、我が欲するところなり</td>
+        <td><span class="badge badge-attack">攻撃</span> <span class="badge badge-defense">軽減</span> <span class="badge badge-special">異常ダメ</span></td>
+        <td>敵に200%~ダメージ / 50%で「生」(味方ダメ軽減+30%) / 50%で「義」(敵行動前に攻撃力120%~の異常ダメ)</td>
+      </tr>
+      <tr>
+        <td class="meishi-name">孟子</td>
+        <td class="skill-name">舗装の達人</td>
+        <td><span class="badge badge-produce">生産</span></td>
+        <td>舗装工場に任命時、資源生産速度 +40%〜+56%</td>
+      </tr>
+      <tr>
+        <td class="meishi-name">孟子</td>
+        <td class="skill-name">仁者無敵</td>
+        <td><span class="badge badge-special">戦場点呼</span></td>
+        <td>戦場点呼においてブロックを消した際のスコア +6%〜+12%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
