@@ -9,23 +9,23 @@
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
     background-color: #f4f6f8;
     color: #333;
-    padding: 15px;
+    padding: 10px;
     margin: 0;
   }
   h1 {
     text-align: center;
     color: #2c3e50;
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-bottom: 15px;
+    font-size: 18px;
   }
   .controls {
     max-width: 1100px;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 15px auto;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
     background: #fff;
-    padding: 15px;
+    padding: 12px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   }
@@ -36,117 +36,85 @@
     align-items: center;
   }
   .group-title {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
     color: #64748b;
-    margin-right: 4px;
-    min-width: 80px;
+    margin-right: 2px;
+    min-width: 70px;
   }
   .btn {
     border: none;
-    padding: 6px 12px;
-    border-radius: 16px;
+    padding: 5px 10px;
+    border-radius: 14px;
     background-color: #f1f5f9;
     color: #475569;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.2s ease;
   }
   .btn:hover { background-color: #e2e8f0; }
   .btn.active { background-color: #2563eb; color: #ffffff; }
-  .search-row { display: flex; justify-content: flex-end; margin-top: 5px; }
+  .search-row { display: flex; justify-content: flex-end; margin-top: 2px; }
   .search-box {
-    padding: 8px 14px;
+    padding: 6px 12px;
     border: 1px solid #cbd5e1;
-    border-radius: 20px;
-    font-size: 14px;
+    border-radius: 18px;
+    font-size: 13px;
     outline: none;
     width: 100%;
-    max-width: 250px;
   }
-    /* テーブル全体の固定幅制限を解除して画面幅に収める */
   .table-container {
     max-width: 1100px;
     margin: 0 auto;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    overflow-x: auto;
+    overflow-x: hidden; /* 横スクロールを完全に無効化 */
   }
   table { 
     width: 100%; 
-    border-collapse: separate; 
-    border-spacing: 0; 
-    min-width: 100%; /* 横スクロールを防ぐため100%に指定 */
-    table-layout: fixed; /* 列幅を固定してはみ出しを防止 */
+    border-collapse: collapse; 
+    table-layout: fixed; /* 画面幅ぴったりに収める */
   }
   th, td { 
-    padding: 8px 6px; /* 上下左右の余白を小さく */
+    padding: 8px 6px; 
     text-align: left; 
     border-bottom: 1px solid #e1e8ed; 
-    font-size: 11px; /* 全体の文字サイズを小さく */
-    line-height: 1.3;
+    font-size: 12px;
+    line-height: 1.4;
     word-break: break-all;
+    vertical-align: top;
   }
   th {
     background-color: #34495e;
     color: #ffffff;
     font-weight: bold;
     font-size: 12px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
   }
 
-  /* 名士名列（1列目）の横幅固定・幅狭設定 */
-  th:first-child, td:first-child {
-    position: sticky;
-    left: 0;
-    z-index: 5;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.08);
-    width: 4.2em;      /* 4文字程度に縮小 */
-    max-width: 4.2em;
-    word-break: break-all;
-    white-space: normal;
-  }
-  th:first-child {
-    background-color: #2c3e50;
-    z-index: 15;
-  }
-  td:first-child {
-    background-color: #ffffff;
-  }
-  tr:hover td:first-child {
-    background-color: #f8f9fa;
+  /* 幅の自動調整：名士名（25%）、スキル概要（75%） */
+  th:nth-child(1), td:nth-child(1) { width: 25%; }
+  th:last-child, td:last-child { width: 75%; }
+
+  /* スマホ表示で不要な中間列（ランク、兵種、スキル枠、スキル名、分類）を非表示にして重なり解消 */
+  th:nth-child(2), td:nth-child(2),
+  th:nth-child(3), td:nth-child(3),
+  th:nth-child(4), td:nth-child(4),
+  th:nth-child(5), td:nth-child(5),
+  th:nth-child(6), td:nth-child(6) {
+    display: none;
   }
 
-  /* 名士名の文字サイズ調整 */
+  /* 名士名のスタイル */
   .meishi-name {
     font-weight: bold;
-    font-size: 11px;
-    line-height: 1.2;
+    font-size: 12px;
+    color: #1e293b;
   }
 
-  /* タグ装飾 */
-  .rank-badge { display: inline-block; padding: 3px 6px; border-radius: 4px; font-size: 11px; font-weight: bold; white-space: nowrap; }
-  .rank-rare-legend { background-color: #fef3c7; color: #b45309; border: 1px solid #f59e0b; }
-  .type-badge { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; background-color: #e2e8f0; color: #334155; white-space: nowrap; }
-  
-  .slot-badge { display: inline-block; padding: 3px 6px; border-radius: 4px; font-size: 11px; font-weight: bold; white-space: nowrap; }
-  .slot-1 { background-color: #fee2e2; color: #991b1b; }
-  .slot-2 { background-color: #dcfce7; color: #166534; }
-  .slot-3 { background-color: #f3e8ff; color: #6b21a8; }
-
-  .badge { display: inline-block; padding: 3px 6px; border-radius: 4px; font-size: 11px; font-weight: bold; color: #fff; margin-right: 2px; }
-  .badge-attack { background-color: #e74c3c; }
-  .badge-buff { background-color: #e67e22; }
-  .badge-defense { background-color: #2980b9; }
-  .badge-produce { background-color: #27ae60; }
-  .badge-special { background-color: #8e44ad; }
-
-  .skill-name { font-weight: bold; color: #2c3e50; }
-  .meishi-name { font-weight: bold; white-space: nowrap; }
+  /* タグ装飾（検索機能用に維持） */
+  .rank-badge, .type-badge, .slot-badge, .badge { display: inline-block; }
 </style>
 </head>
 <body>
