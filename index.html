@@ -158,15 +158,15 @@
 </head>
 <body>
 
-<h1>🎴 名士スキル分類一覧（Lv.1 初期性能）</h1>
+<h1>🧔‍♀️ 名士スキル分類一覧（Lv.1 初期性能）</h1>
 
 <div class="controls">
   <div class="filter-group">
     <div class="group-title">📌 スキル枠:</div>
     <button class="btn active" onclick="filterSlot('all', this)">すべて</button>
-    <button class="btn" onclick="filterSlot('1', this)">⚔️ 戦闘</button>
-    <button class="btn" onclick="filterSlot('2', this)">🌾 生産</button>
-    <button class="btn" onclick="filterSlot('3', this)">✨ パッシブ</button>
+    <button class="btn" onclick="filterSlot('1', this)">戦闘</button>
+    <button class="btn" onclick="filterSlot('2', this)">生産</button>
+    <button class="btn" onclick="filterSlot('3', this)">パッシブ</button>
   </div>
 
   <div class="filter-group">
@@ -1370,8 +1370,70 @@
 </div>
 
 <script>
+  // 設定済みのDiscord Webhook URL
   const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1561392217019645952/3Ti1eqZdbtsJe9rfzFPesWPPn1w_ehfi-JzKo-QLnE7ozirTDam7s_8U7u53q1HoBLdn";
 
+  let currentSlot = 'all', currentType = 'all', currentRank = 'all', currentCategory = 'all';
+
+  function filterSlot(slot, btn) { currentSlot = slot; updateActiveButton(btn); applyFilters(); }
+  function filterType(type, btn) { currentType = type; updateActiveButton(btn); applyFilters(); }
+  function filterRank(rank, btn) { currentRank = rank; updateActiveButton(btn); applyFilters(); }
+  function filterCategory(cat, btn) { currentCategory = cat; updateActiveButton(btn); applyFilters(); }
+
+  function updateActiveButton(btn) {
+    const buttons = btn.parentElement.querySelectorAll('.btn');
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+
+  function filterSearch() { applyFilters(); }
+
+  function applyFilters() {
+    const searchText = document.getElementById('searchInput').value.trim().toLowerCase();
+    const rows = document.querySelectorAll('#skillsTable tbody tr');
+
+    rows.forEach(row => {
+      const slot = row.getAttribute('data-slot');
+      const type = row.getAttribute('data-type');
+      const rank = row.getAttribute('data-rank');
+      const category = row.getAttribute('data-category') || '';
+      const text = row.innerText.toLowerCase();
+
+      const matchSlot = (currentSlot === 'all') || (slot === currentSlot);
+      const matchType = (currentType === 'all') || (type === currentType);
+      const matchRank = (currentRank === 'all') || (rank === currentRank);
+
+      // 効果分類ボタンの判定（「バフ/デバフ」「バフのみ」「デバフのみ」の区別）
+      let matchCategory = false;
+      if (currentCategory === 'all') {
+        matchCategory = true;
+      } else if (currentCategory === 'バフ/デバフ') {
+        // バフかデバフのどちらか（あるいは両方）を含んでいれば表示
+        matchCategory = category.includes('バフ') || category.includes('デバフ');
+      } else if (currentCategory === 'バフ') {
+        // 「デバフ」を除外して「バフ」が含まれるか判定
+        const catWithoutDebuff = category.replace(/デバフ/g, '');
+        matchCategory = catWithoutDebuff.includes('バフ');
+      } else {
+        matchCategory = category.includes(currentCategory);
+      }
+
+      // 検索ボックスの判定（「バフ」入力時に「デバフ」を除外）
+      let matchSearch = false;
+      if (searchText === '') {
+        matchSearch = true;
+      } else if (searchText === 'バフ') {
+        const textWithoutDebuff = text.replace(/デバフ/g, '');
+        matchSearch = textWithoutDebuff.includes('バフ');
+      } else {
+        matchSearch = text.includes(searchText);
+      }
+
+      row.style.display = (matchSlot && matchType && matchRank && matchCategory && matchSearch) ? '' : 'none';
+    });
+  }
+
+  // Discord送信機能（メッセージ＆画像）
   async function sendToDiscord() {
     const textInput = document.getElementById('feedbackText');
     const imageInput = document.getElementById('feedbackImage');
@@ -1404,7 +1466,7 @@
       if (response.ok) {
         alert("あすとろへ送信しました！ありがとうございます。");
         textInput.value = "";
-        imageInput.value = ""; // ファイル選択をクリア
+        imageInput.value = "";
       } else {
         alert("送信に失敗しました。時間をおいて再度お試しください。");
       }
@@ -1414,6 +1476,7 @@
     }
   }
 </script>
+
 
 <script>
   let currentSlot = 'all', currentType = 'all', currentRank = 'all', currentCategory = 'all';
