@@ -15,26 +15,39 @@
   h1 {
     text-align: center;
     color: #2c3e50;
+    margin-bottom: 20px;
   }
   .controls {
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 0 auto 20px auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
     align-items: center;
     justify-content: space-between;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   }
-  .filter-buttons {
+  .filter-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 6px;
+    align-items: center;
+  }
+  .group-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #64748b;
+    margin-right: 4px;
+    width: 100%;
   }
   .btn {
     border: none;
-    padding: 8px 14px;
-    border-radius: 20px;
-    background-color: #e0e6ed;
+    padding: 7px 12px;
+    border-radius: 16px;
+    background-color: #f1f5f9;
     color: #475569;
     font-size: 13px;
     font-weight: bold;
@@ -42,7 +55,7 @@
     transition: all 0.2s ease;
   }
   .btn:hover {
-    background-color: #cbd5e1;
+    background-color: #e2e8f0;
   }
   .btn.active {
     background-color: #2563eb;
@@ -54,10 +67,10 @@
     border-radius: 20px;
     font-size: 14px;
     outline: none;
-    width: 200px;
+    width: 220px;
   }
   .table-container {
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 0 auto;
     background: #fff;
     border-radius: 8px;
@@ -67,7 +80,7 @@
   table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 700px;
+    min-width: 750px;
   }
   th, td {
     padding: 12px 15px;
@@ -92,21 +105,35 @@
   tr:hover {
     background-color: #f8f9fa;
   }
-  /* カテゴリ別タグの色分け */
+
+  /* 枠（スロット）別の見た目 */
+  .slot-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .slot-1 { background-color: #fee2e2; color: #991b1b; } /* 戦闘スキル */
+  .slot-2 { background-color: #dcfce7; color: #166534; } /* 生産スキル */
+  .slot-3 { background-color: #f3e8ff; color: #6b21a8; } /* パッシブスキル */
+
+  /* 効果カテゴリタグ */
   .badge {
     display: inline-block;
-    padding: 4px 8px;
+    padding: 3px 6px;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
     color: #fff;
     margin-right: 2px;
   }
-  .badge-attack { background-color: #e74c3c; } /* 攻撃・即死・妨害 */
-  .badge-buff { background-color: #e67e22; }   /* バフ・デバフ */
-  .badge-defense { background-color: #2980b9; }/* 軽減・シールド */
-  .badge-produce { background-color: #27ae60; }/* 施設・資源生産 */
-  .badge-special { background-color: #8e44ad; }/* 特殊・追加効果 */
+  .badge-attack { background-color: #e74c3c; }
+  .badge-buff { background-color: #e67e22; }
+  .badge-defense { background-color: #2980b9; }
+  .badge-produce { background-color: #27ae60; }
+  .badge-special { background-color: #8e44ad; }
 
   .skill-name {
     font-weight: bold;
@@ -120,18 +147,17 @@
 </head>
 <body>
 
-<h1>🎴 名士スキル一覧（Lv.1 初期性能）</h1>
+<h1>🎴 名士スキル分類一覧（Lv.1 初期性能）</h1>
 
 <div class="controls">
-  <div class="filter-buttons">
-    <button class="btn active" onclick="filterCategory('all', this)">すべて表示</button>
-    <button class="btn" onclick="filterCategory('produce', this)">🌾 生産・施設</button>
-    <button class="btn" onclick="filterCategory('attack', this)">⚔️ 攻撃・妨害</button>
-    <button class="btn" onclick="filterCategory('buff', this)">橙 バフ・デバフ</button>
-    <button class="btn" onclick="filterCategory('defense', this)">🛡️ 軽減・シールド</button>
-    <button class="btn" onclick="filterCategory('special', this)">✨ 特殊・その他</button>
+  <div class="filter-group">
+    <div class="group-title">📌 スキル枠で絞り込み:</div>
+    <button class="btn active" onclick="filterSlot('all', this)">全スキル表示</button>
+    <button class="btn" onclick="filterSlot('1', this)">⚔️ 1枠目：戦闘スキル (40%発動)</button>
+    <button class="btn" onclick="filterSlot('2', this)">🌾 2枠目：生産スキル</button>
+    <button class="btn" onclick="filterSlot('3', this)">✨ 3枠目：パッシブスキル</button>
   </div>
-  <input type="text" id="searchInput" class="search-box" placeholder="名士・スキル・効果で検索..." onkeyup="filterSearch()">
+  <input type="text" id="searchInput" class="search-box" placeholder="名士・スキル名で検索..." onkeyup="filterSearch()">
 </div>
 
 <div class="table-container">
@@ -139,187 +165,215 @@
     <thead>
       <tr>
         <th onclick="sortTable(0)">名士名</th>
-        <th onclick="sortTable(1)">スキル名</th>
-        <th onclick="sortTable(2)">効果分類</th>
+        <th onclick="sortTable(1)">スキル枠</th>
+        <th onclick="sortTable(2)">スキル名</th>
+        <th onclick="sortTable(3)">効果分類</th>
         <th>Lv.1 スキル効果概要</th>
       </tr>
     </thead>
     <tbody>
       <!-- 始祖黄帝 -->
-      <tr data-categories="attack buff">
+      <tr data-slot="1">
         <td class="meishi-name">始祖黄帝</td>
+        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
         <td class="skill-name">天断の極意</td>
         <td><span class="badge badge-attack">攻撃・即死</span><span class="badge badge-buff">バフ/デバフ</span></td>
         <td>40%発動: 敵に200%ダメージ / 飛剣で敵名士2人即死 / 味方全攻撃バフ+15% / 敵攻撃デバフ-15% (2T)</td>
       </tr>
-      <tr data-categories="produce">
+      <tr data-slot="2">
         <td class="meishi-name">始祖黄帝</td>
+        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
         <td class="skill-name">海国の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>海国編建築任命時、資源生産速度 +40%</td>
       </tr>
-      <tr data-categories="defense">
+      <tr data-slot="3">
         <td class="meishi-name">始祖黄帝</td>
+        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
         <td class="skill-name">土徳の瑞祥</td>
         <td><span class="badge badge-defense">軽減</span></td>
         <td>低品質名士スキルからの被ダメージ -15%</td>
       </tr>
 
       <!-- 蚩尤 -->
-      <tr data-categories="attack">
+      <tr data-slot="1">
         <td class="meishi-name">蚩尤</td>
+        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
         <td class="skill-name">戦獣の咆哮</td>
         <td><span class="badge badge-attack">攻撃・会心</span></td>
         <td>40%発動: 敵に200%ダメージ / 50%の確率でクリティカル(ダメージ2倍)</td>
       </tr>
-      <tr data-categories="produce">
+      <tr data-slot="2">
         <td class="meishi-name">蚩尤</td>
+        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
         <td class="skill-name">伐採の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>伐採場任命時、資源生産速度 +40%</td>
       </tr>
-      <tr data-categories="buff">
+      <tr data-slot="3">
         <td class="meishi-name">蚩尤</td>
+        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
         <td class="skill-name">無双の勇</td>
         <td><span class="badge badge-buff">征戦バフ</span></td>
         <td>征戦時、味方全体のダメージバフ +12%</td>
       </tr>
 
       <!-- 孟子 -->
-      <tr data-categories="attack defense special">
+      <tr data-slot="1">
         <td class="meishi-name">孟子</td>
+        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
         <td class="skill-name">魚、我が欲するところなり</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-defense">軽減</span><span class="badge badge-special">状態異常</span></td>
         <td>40%発動: 敵に200%ダメージ / 50%で「生」(味方ダメ軽減+30% 2T) / 50%で「義」(敵行動前に120%異常ダメ 2T)</td>
       </tr>
-      <tr data-categories="produce">
+      <tr data-slot="2">
         <td class="meishi-name">孟子</td>
+        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
         <td class="skill-name">舗装の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>舗装工場任命時、資源生産速度 +40%</td>
       </tr>
-      <tr data-categories="special">
+      <tr data-slot="3">
         <td class="meishi-name">孟子</td>
+        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
         <td class="skill-name">仁者無敵</td>
         <td><span class="badge badge-special">点呼スコア</span></td>
         <td>戦場点呼でブロック削除時のスコア +6%</td>
       </tr>
 
       <!-- リンカーン -->
-      <tr data-categories="attack buff">
+      <tr data-slot="1">
         <td class="meishi-name">リンカーン</td>
+        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
         <td class="skill-name">独立宣言</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">謀略バフ</span></td>
         <td>40%発動: 敵に200%ダメージ＋味方謀略+1000 / 味方体力50%未満ならダメ係数+100%、50%以上なら謀略追加+500</td>
       </tr>
-      <tr data-categories="produce">
+      <tr data-slot="2">
         <td class="meishi-name">リンカーン</td>
+        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
         <td class="skill-name">石油の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>油井任命時、資源生産速度 +40%</td>
       </tr>
-      <tr data-categories="special">
+      <tr data-slot="3">
         <td class="meishi-name">リンカーン</td>
+        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
         <td class="skill-name">自由の灯台</td>
         <td><span class="badge badge-special">褒章産出</span></td>
         <td>十大文明における文明の褒章産出 +6%</td>
       </tr>
 
       <!-- 真田幸村 -->
-      <tr data-categories="attack">
+      <tr data-slot="1">
         <td class="meishi-name">真田幸村</td>
+        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
         <td class="skill-name">烈火覇王槍</td>
         <td><span class="badge badge-attack">攻撃・行動不能</span></td>
         <td>40%発動: 敵に200%斬撃ダメージ / 50%の確率で「戦慄」状態（行動不能 1T）</td>
       </tr>
-      <tr data-categories="produce">
+      <tr data-slot="2">
         <td class="meishi-name">真田幸村</td>
+        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
         <td class="skill-name">製鉄の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>製鉄所任命時、資源生産速度 +40%</td>
       </tr>
-      <tr data-categories="buff">
+      <tr data-slot="3">
         <td class="meishi-name">真田幸村</td>
+        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
         <td class="skill-name">赤備の威名</td>
         <td><span class="badge badge-buff">泰山バフ</span></td>
         <td>泰山対決・泰山争覇の戦闘時、味方全体のダメージバフ +12%</td>
       </tr>
 
       <!-- 穆桂英 -->
-      <tr data-categories="attack buff special">
+      <tr data-slot="1">
         <td class="meishi-name">穆桂英</td>
+        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
         <td class="skill-name">門陣を打ち破る</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">バフ</span><span class="badge badge-special">状態異常</span></td>
         <td>40%発動: 敵に200%ダメージ / 味方の状態異常ダメ+30% / 敵の行動前に120%の状態異常ダメ (2T)</td>
       </tr>
-      <tr data-categories="produce">
+      <tr data-slot="2">
         <td class="meishi-name">穆桂英</td>
+        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
         <td class="skill-name">栽培の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>農園任命時、資源生産速度 +40%</td>
       </tr>
-      <tr data-categories="special">
+      <tr data-slot="3">
         <td class="meishi-name">穆桂英</td>
+        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
         <td class="skill-name">元帥</td>
         <td><span class="badge badge-special">軍隊上限</span></td>
         <td>燕雲烽火の中、全軍隊の上限数が +30% 増加</td>
       </tr>
 
       <!-- 岳飛 -->
-      <tr data-categories="attack buff">
+      <tr data-slot="1">
         <td class="meishi-name">岳飛</td>
+        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
         <td class="skill-name">破虜の神槍</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">デバフ</span></td>
         <td>40%発動: 敵に200%ダメージ / 敵に「恐怖」付与 (行動前100%ダメ＆攻撃力-15% 2T)</td>
       </tr>
-      <tr data-categories="produce">
+      <tr data-slot="2">
         <td class="meishi-name">岳飛</td>
+        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
         <td class="skill-name">舗装の達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>舗装工場任命時、資源生産速度 +40%</td>
       </tr>
-      <tr data-categories="buff">
+      <tr data-slot="3">
         <td class="meishi-name">岳飛</td>
+        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
         <td class="skill-name">直接突進</td>
         <td><span class="badge badge-buff">泰山バフ</span></td>
         <td>泰山対決・泰山争覇の戦闘時、味方全体のダメージバフ +12%</td>
       </tr>
 
       <!-- 五竹 -->
-      <tr data-categories="attack">
+      <tr data-slot="1">
         <td class="meishi-name">五竹</td>
+        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
         <td class="skill-name">レーザーアイ</td>
         <td><span class="badge badge-attack">攻撃・消滅</span></td>
         <td>40%発動: 敵に200%ダメージ / 敵前列1人を溶かし、30%で拡散してさらに前列1人を溶かす</td>
       </tr>
-      <tr data-categories="produce">
+      <tr data-slot="2">
         <td class="meishi-name">五竹</td>
+        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
         <td class="skill-name">合金達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>合金工場任命時、資源生産速度 +40%</td>
       </tr>
-      <tr data-categories="buff">
+      <tr data-slot="3">
         <td class="meishi-name">五竹</td>
+        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
         <td class="skill-name">大宗師の訓練</td>
         <td><span class="badge badge-buff">特定キャラ強化</span></td>
         <td>范閑の攻撃力と体力 +15%</td>
       </tr>
 
       <!-- アインシュタイン -->
-      <tr data-categories="attack defense">
+      <tr data-slot="1">
         <td class="meishi-name">アインシュタイン</td>
+        <td><span class="slot-badge slot-1">1枠目:戦闘</span></td>
         <td class="skill-name">時空の歪み</td>
         <td><span class="badge badge-attack">攻撃</span><span class="badge badge-defense">シールド</span></td>
         <td>40%発動: 敵に200%ダメージ / 味方に最大体力20%のシールド付与＋超過回復をシールド変換 (3T)</td>
       </tr>
-      <tr data-categories="produce">
+      <tr data-slot="2">
         <td class="meishi-name">アインシュタイン</td>
+        <td><span class="slot-badge slot-2">2枠目:生産</span></td>
         <td class="skill-name">合金達人</td>
         <td><span class="badge badge-produce">生産</span></td>
         <td>合金工場任命時、資源生産速度 +40%</td>
       </tr>
-      <tr data-categories="produce special">
+      <tr data-slot="3">
         <td class="meishi-name">アインシュタイン</td>
+        <td><span class="slot-badge slot-3">3枠目:パッシブ</span></td>
         <td class="skill-name">相対性理論</td>
         <td><span class="badge badge-special">発電バフ</span></td>
         <td>発電所が通電建築に与える生産速度バフ +6%</td>
@@ -329,13 +383,12 @@
 </div>
 
 <script>
-  let currentCategory = 'all';
+  let currentSlot = 'all';
 
-  function filterCategory(category, btn) {
-    currentCategory = category;
+  function filterSlot(slot, btn) {
+    currentSlot = slot;
     
-    // ボタンのスタイル切り替え
-    const buttons = document.querySelectorAll('.btn');
+    const buttons = btn.parentElement.querySelectorAll('.btn');
     buttons.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
 
@@ -351,13 +404,13 @@
     const rows = document.querySelectorAll('#skillsTable tbody tr');
 
     rows.forEach(row => {
-      const categories = row.getAttribute('data-categories').split(' ');
+      const slot = row.getAttribute('data-slot');
       const text = row.innerText.toLowerCase();
 
-      const matchCategory = (currentCategory === 'all') || categories.includes(currentCategory);
+      const matchSlot = (currentSlot === 'all') || (slot === currentSlot);
       const matchSearch = text.includes(searchText);
 
-      if (matchCategory && matchSearch) {
+      if (matchSlot && matchSearch) {
         row.style.display = '';
       } else {
         row.style.display = 'none';
@@ -365,7 +418,7 @@
     });
   }
 
-  // テーブルソート（五十音順・アルファベット順）
+  // テーブルソート機能（五十音順）
   let sortDirection = false;
   function sortTable(columnIndex) {
     const table = document.getElementById("skillsTable");
