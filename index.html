@@ -5,255 +5,386 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>モーマンタイム 名士スキル一覧 (Lv.1初期値)</title>
 <style>
-body {
-font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
-background-color: #f4f6f8;
-color: #333;
-padding: 20px;
-margin: 0;
-}
-h1 {
-text-align: center;
-color: #2c3e50;
-margin-bottom: 20px;
-}
-.table-container {
-max-width: 1000px;
-margin: 0 auto;
-background: #fff;
-border-radius: 8px;
-box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-overflow-x: auto;
-}
-table {
-width: 100%;
-border-collapse: collapse;
-min-width: 700px;
-}
-th, td {
-padding: 12px 15px;
-text-align: left;
-border-bottom: 1px solid #e1e8ed;
-}
-th {
-background-color: #34495e;
-color: #ffffff;
-font-weight: bold;
-}
-tr:hover {
-background-color: #f8f9fa;
-}
-/* カテゴリ別タグの色分け /
-.badge {
-display: inline-block;
-padding: 4px 8px;
-border-radius: 4px;
-font-size: 12px;
-font-weight: bold;
-color: #fff;
-margin-right: 4px;
-}
-.badge-attack { background-color: #e74c3c; } / 攻撃・即死・行動不能 /
-.badge-buff { background-color: #e67e22; }   / バフ・デバフ /
-.badge-defense { background-color: #2980b9; }/ 軽減・シールド /
-.badge-produce { background-color: #27ae60; }/ 施設・資源生産 /
-.badge-special { background-color: #8e44ad; }/ 特殊・育成・スコア */
-​.skill-name {
-font-weight: bold;
-color: #2c3e50;
-}
-.meishi-name {
-font-weight: bold;
-white-space: nowrap;
-}
+  body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+  }
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  .controls {
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .btn {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    background-color: #e0e6ed;
+    color: #475569;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .btn:hover {
+    background-color: #cbd5e1;
+  }
+  .btn.active {
+    background-color: #2563eb;
+    color: #ffffff;
+  }
+  .search-box {
+    padding: 8px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    width: 200px;
+  }
+  .table-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow-x: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+  }
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e1e8ed;
+  }
+  th {
+    background-color: #34495e;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+  }
+  th:hover {
+    background-color: #2c3e50;
+  }
+  th::after {
+    content: " ⇅";
+    font-size: 11px;
+    opacity: 0.6;
+  }
+  tr:hover {
+    background-color: #f8f9fa;
+  }
+  /* カテゴリ別タグの色分け */
+  .badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 2px;
+  }
+  .badge-attack { background-color: #e74c3c; } /* 攻撃・即死・妨害 */
+  .badge-buff { background-color: #e67e22; }   /* バフ・デバフ */
+  .badge-defense { background-color: #2980b9; }/* 軽減・シールド */
+  .badge-produce { background-color: #27ae60; }/* 施設・資源生産 */
+  .badge-special { background-color: #8e44ad; }/* 特殊・追加効果 */
+
+  .skill-name {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  .meishi-name {
+    font-weight: bold;
+    white-space: nowrap;
+  }
 </style>
 </head>
 <body>
-​<h1>🎴 モーマンタイム 名士スキル分類一覧表（Lv.1 初期値）</h1>
-​<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>名士名</th>
-<th>スキル名</th>
-<th>効果分類</th>
-<th>Lv.1 スキル効果概要</th>
-</tr>
-</thead>
-<tbody>
-<!-- 始祖黄帝 -->
-<tr>
-<td class="meishi-name">始祖黄帝</td>
-<td class="skill-name">天断の極意</td>
-<td><span class="badge badge-attack">攻撃・即死</span><span class="badge badge-buff">バフ/デバフ</span></td>
-<td>40%発動: 敵に200%ダメージ / 飛剣で敵名士2人即死 / 味方全攻撃バフ+15% / 敵攻撃デバフ-15% (2T)</td>
-</tr>
-<tr>
-<td class="meishi-name">始祖黄帝</td>
-<td class="skill-name">海国の達人</td>
-<td><span class="badge badge-produce">生産</span></td>
-<td>海国編建築任命時、資源生産速度 +40%</td>
-</tr>
-<tr>
-<td class="meishi-name">始祖黄帝</td>
-<td class="skill-name">土徳の瑞祥</td>
-<td><span class="badge badge-defense">軽減</span></td>
-<td>低品質名士スキルからの被ダメージ -15%</td>
-</tr>
-​<!-- 蚩尤 -->
-<tr>
-<td class="meishi-name">蚩尤</td>
-<td class="skill-name">戦獣の咆哮</td>
-<td><span class="badge badge-attack">攻撃・会心</span></td>
-<td>40%発動: 敵に200%ダメージ / 50%の確率でクリティカル(ダメージ2倍)</td>
-</tr>
-<tr>
-<td class="meishi-name">蚩尤</td>
-<td class="skill-name">伐採の達人</td>
-<td><span class="badge badge-produce">生産</span></td>
-<td>伐採場任命時、資源生産速度 +40%</td>
-</tr>
-<tr>
-<td class="meishi-name">蚩尤</td>
-<td class="skill-name">無双の勇</td>
-<td><span class="badge badge-buff">征戦バフ</span></td>
-<td>征戦時、味方全体のダメージバフ +12%</td>
-</tr>
-​<!-- 孟子 -->
-<tr>
-<td class="meishi-name">孟子</td>
-<td class="skill-name">魚、我が欲するところなり</td>
-<td><span class="badge badge-attack">攻撃</span><span class="badge badge-defense">軽減</span><span class="badge badge-special">状態異常</span></td>
-<td>40%発動: 敵に200%ダメージ / 50%で「生」(味方ダメ軽減+30% 2T) / 50%で「義」(敵行動前に120%異常ダメ 2T)</td>
-</tr>
-<tr>
-<td class="meishi-name">孟子</td>
-<td class="skill-name">舗装の達人</td>
-<td><span class="badge badge-produce">生産</span></td>
-<td>舗装工場任命時、資源生産速度 +40%</td>
-</tr>
-<tr>
-<td class="meishi-name">孟子</td>
-<td class="skill-name">仁者無敵</td>
-<td><span class="badge badge-special">点呼スコア</span></td>
-<td>戦場点呼でブロック削除時のスコア +6%</td>
-</tr>
-​<!-- リンカーン -->
-<tr>
-<td class="meishi-name">リンカーン</td>
-<td class="skill-name">独立宣言</td>
-<td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">謀略バフ</span></td>
-<td>40%発動: 敵に200%ダメージ＋味方謀略+1000 / 味方体力50%未満ならダメ係数+100%、50%以上なら謀略追加+500</td>
-</tr>
-<tr>
-<td class="meishi-name">リンカーン</td>
-<td class="skill-name">石油の達人</td>
-<td><span class="badge badge-produce">生産</span></td>
-<td>油井任命時、資源生産速度 +40%</td>
-</tr>
-<tr>
-<td class="meishi-name">リンカーン</td>
-<td class="skill-name">自由の灯台</td>
-<td><span class="badge badge-special">褒章産出</span></td>
-<td>十大文明における文明の褒章産出 +6%</td>
-</tr>
-​<!-- 真田幸村 -->
-<tr>
-<td class="meishi-name">真田幸村</td>
-<td class="skill-name">烈火覇王槍</td>
-<td><span class="badge badge-attack">攻撃・妨害</span></td>
-<td>40%発動: 敵に200%斬撃ダメージ / 50%の確率で「戦慄」状態（行動不能 1T）</td>
-</tr>
-<tr>
-<td class="meishi-name">真田幸村</td>
-<td class="skill-name">製鉄の達人</td>
-<td><span class="badge badge-produce">生産</span></td>
-<td>製鉄所任命時、資源生産速度 +40%</td>
-</tr>
-<tr>
-<td class="meishi-name">真田幸村</td>
-<td class="skill-name">赤備の威名</td>
-<td><span class="badge badge-buff">泰山バフ</span></td>
-<td>泰山対決・泰山争覇の戦闘時、味方全体のダメージバフ +12%</td>
-</tr>
-​<!-- 穆桂英 -->
-<tr>
-<td class="meishi-name">穆桂英</td>
-<td class="skill-name">門陣を打ち破る</td>
-<td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">異常ダメバフ</span><span class="badge badge-special">状態異常</span></td>
-<td>40%発動: 敵に200%ダメージ / 味方の状態異常ダメージ+30% / 敵の行動前に攻撃の120%状態異常ダメージ(2T)</td>
-</tr>
-<tr>
-<td class="meishi-name">穆桂英</td>
-<td class="skill-name">栽培の達人</td>
-<td><span class="badge badge-produce">生産</span></td>
-<td>農園任命時、資源生産速度 +40%</td>
-</tr>
-<tr>
-<td class="meishi-name">穆桂英</td>
-<td class="skill-name">元帥</td>
-<td><span class="badge badge-special">軍隊上限</span></td>
-<td>燕雲烽火の中、全軍隊の上限数が +30% 増加</td>
-</tr>
-​<!-- 岳飛 -->
-<tr>
-<td class="meishi-name">岳飛</td>
-<td class="skill-name">破虜の神槍</td>
-<td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">デバフ</span><span class="badge badge-special">状態異常</span></td>
-<td>40%発動: 敵に200%ダメージ / 敵に「恐怖」付与(敵行動前に100%ダメ＋攻撃力-15% 2T)</td>
-</tr>
-<tr>
-<td class="meishi-name">岳飛</td>
-<td class="skill-name">舗装の達人</td>
-<td><span class="badge badge-produce">生産</span></td>
-<td>舗装工場任命時、資源生産速度 +40%</td>
-</tr>
-<tr>
-<td class="meishi-name">岳飛</td>
-<td class="skill-name">直接突進</td>
-<td><span class="badge badge-buff">泰山バフ</span></td>
-<td>泰山対決・泰山争覇の戦闘時、味方全体のダメージバフ +12%</td>
-</tr>
-​<!-- 五竹 -->
-<tr>
-<td class="meishi-name">五竹</td>
-<td class="skill-name">レーザーアイ</td>
-<td><span class="badge badge-attack">攻撃・撃破</span></td>
-<td>40%発動: 敵に200%ダメージ / 敵前列の名士1人を溶かす / 30%の確率で散射し、さらに敵前列の名士1人を溶かす</td>
-</tr>
-<tr>
-<td class="meishi-name">五竹</td>
-<td class="skill-name">合金達人</td>
-<td><span class="badge badge-produce">生産</span></td>
-<td>合金工場任命時、資源生産速度 +40%</td>
-</tr>
-<tr>
-<td class="meishi-name">五竹</td>
-<td class="skill-name">大宗師の訓練</td>
-<td><span class="badge badge-buff">特定名士強化</span></td>
-<td>范閑の攻撃力と体力 +15%</td>
-</tr>
-​<!-- アインシュタイン -->
-<tr>
-<td class="meishi-name">アインシュタイン</td>
-<td class="skill-name">時空の歪み</td>
-<td><span class="badge badge-attack">攻撃</span><span class="badge badge-defense">シールド</span></td>
-<td>40%発動: 敵に200%ダメージ / 味方に最大体力の20%シールド付与 / 「重力波」付与(超過回復量を同量シールド変換 3T)</td>
-</tr>
-<tr>
-<td class="meishi-name">アインシュタイン</td>
-<td class="skill-name">合金達人</td>
-<td><span class="badge badge-produce">生産</span></td>
-<td>合金工場任命時、資源生産速度 +40%</td>
-</tr>
-<tr>
-<td class="meishi-name">アインシュタイン</td>
-<td class="skill-name">相対性理論</td>
-<td><span class="badge badge-produce">発電所バフ</span></td>
-<td>発電所が通電建築に与える生産速度バフ +6%</td>
-</tr>
-</tbody>
-</table>
+
+<h1>🎴 名士スキル一覧（Lv.1 初期性能）</h1>
+
+<div class="controls">
+  <div class="filter-buttons">
+    <button class="btn active" onclick="filterCategory('all', this)">すべて表示</button>
+    <button class="btn" onclick="filterCategory('produce', this)">🌾 生産・施設</button>
+    <button class="btn" onclick="filterCategory('attack', this)">⚔️ 攻撃・妨害</button>
+    <button class="btn" onclick="filterCategory('buff', this)">橙 バフ・デバフ</button>
+    <button class="btn" onclick="filterCategory('defense', this)">🛡️ 軽減・シールド</button>
+    <button class="btn" onclick="filterCategory('special', this)">✨ 特殊・その他</button>
+  </div>
+  <input type="text" id="searchInput" class="search-box" placeholder="名士・スキル・効果で検索..." onkeyup="filterSearch()">
 </div>
-​</body>
+
+<div class="table-container">
+  <table id="skillsTable">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">名士名</th>
+        <th onclick="sortTable(1)">スキル名</th>
+        <th onclick="sortTable(2)">効果分類</th>
+        <th>Lv.1 スキル効果概要</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 始祖黄帝 -->
+      <tr data-categories="attack buff">
+        <td class="meishi-name">始祖黄帝</td>
+        <td class="skill-name">天断の極意</td>
+        <td><span class="badge badge-attack">攻撃・即死</span><span class="badge badge-buff">バフ/デバフ</span></td>
+        <td>40%発動: 敵に200%ダメージ / 飛剣で敵名士2人即死 / 味方全攻撃バフ+15% / 敵攻撃デバフ-15% (2T)</td>
+      </tr>
+      <tr data-categories="produce">
+        <td class="meishi-name">始祖黄帝</td>
+        <td class="skill-name">海国の達人</td>
+        <td><span class="badge badge-produce">生産</span></td>
+        <td>海国編建築任命時、資源生産速度 +40%</td>
+      </tr>
+      <tr data-categories="defense">
+        <td class="meishi-name">始祖黄帝</td>
+        <td class="skill-name">土徳の瑞祥</td>
+        <td><span class="badge badge-defense">軽減</span></td>
+        <td>低品質名士スキルからの被ダメージ -15%</td>
+      </tr>
+
+      <!-- 蚩尤 -->
+      <tr data-categories="attack">
+        <td class="meishi-name">蚩尤</td>
+        <td class="skill-name">戦獣の咆哮</td>
+        <td><span class="badge badge-attack">攻撃・会心</span></td>
+        <td>40%発動: 敵に200%ダメージ / 50%の確率でクリティカル(ダメージ2倍)</td>
+      </tr>
+      <tr data-categories="produce">
+        <td class="meishi-name">蚩尤</td>
+        <td class="skill-name">伐採の達人</td>
+        <td><span class="badge badge-produce">生産</span></td>
+        <td>伐採場任命時、資源生産速度 +40%</td>
+      </tr>
+      <tr data-categories="buff">
+        <td class="meishi-name">蚩尤</td>
+        <td class="skill-name">無双の勇</td>
+        <td><span class="badge badge-buff">征戦バフ</span></td>
+        <td>征戦時、味方全体のダメージバフ +12%</td>
+      </tr>
+
+      <!-- 孟子 -->
+      <tr data-categories="attack defense special">
+        <td class="meishi-name">孟子</td>
+        <td class="skill-name">魚、我が欲するところなり</td>
+        <td><span class="badge badge-attack">攻撃</span><span class="badge badge-defense">軽減</span><span class="badge badge-special">状態異常</span></td>
+        <td>40%発動: 敵に200%ダメージ / 50%で「生」(味方ダメ軽減+30% 2T) / 50%で「義」(敵行動前に120%異常ダメ 2T)</td>
+      </tr>
+      <tr data-categories="produce">
+        <td class="meishi-name">孟子</td>
+        <td class="skill-name">舗装の達人</td>
+        <td><span class="badge badge-produce">生産</span></td>
+        <td>舗装工場任命時、資源生産速度 +40%</td>
+      </tr>
+      <tr data-categories="special">
+        <td class="meishi-name">孟子</td>
+        <td class="skill-name">仁者無敵</td>
+        <td><span class="badge badge-special">点呼スコア</span></td>
+        <td>戦場点呼でブロック削除時のスコア +6%</td>
+      </tr>
+
+      <!-- リンカーン -->
+      <tr data-categories="attack buff">
+        <td class="meishi-name">リンカーン</td>
+        <td class="skill-name">独立宣言</td>
+        <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">謀略バフ</span></td>
+        <td>40%発動: 敵に200%ダメージ＋味方謀略+1000 / 味方体力50%未満ならダメ係数+100%、50%以上なら謀略追加+500</td>
+      </tr>
+      <tr data-categories="produce">
+        <td class="meishi-name">リンカーン</td>
+        <td class="skill-name">石油の達人</td>
+        <td><span class="badge badge-produce">生産</span></td>
+        <td>油井任命時、資源生産速度 +40%</td>
+      </tr>
+      <tr data-categories="special">
+        <td class="meishi-name">リンカーン</td>
+        <td class="skill-name">自由の灯台</td>
+        <td><span class="badge badge-special">褒章産出</span></td>
+        <td>十大文明における文明の褒章産出 +6%</td>
+      </tr>
+
+      <!-- 真田幸村 -->
+      <tr data-categories="attack">
+        <td class="meishi-name">真田幸村</td>
+        <td class="skill-name">烈火覇王槍</td>
+        <td><span class="badge badge-attack">攻撃・行動不能</span></td>
+        <td>40%発動: 敵に200%斬撃ダメージ / 50%の確率で「戦慄」状態（行動不能 1T）</td>
+      </tr>
+      <tr data-categories="produce">
+        <td class="meishi-name">真田幸村</td>
+        <td class="skill-name">製鉄の達人</td>
+        <td><span class="badge badge-produce">生産</span></td>
+        <td>製鉄所任命時、資源生産速度 +40%</td>
+      </tr>
+      <tr data-categories="buff">
+        <td class="meishi-name">真田幸村</td>
+        <td class="skill-name">赤備の威名</td>
+        <td><span class="badge badge-buff">泰山バフ</span></td>
+        <td>泰山対決・泰山争覇の戦闘時、味方全体のダメージバフ +12%</td>
+      </tr>
+
+      <!-- 穆桂英 -->
+      <tr data-categories="attack buff special">
+        <td class="meishi-name">穆桂英</td>
+        <td class="skill-name">門陣を打ち破る</td>
+        <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">バフ</span><span class="badge badge-special">状態異常</span></td>
+        <td>40%発動: 敵に200%ダメージ / 味方の状態異常ダメ+30% / 敵の行動前に120%の状態異常ダメ (2T)</td>
+      </tr>
+      <tr data-categories="produce">
+        <td class="meishi-name">穆桂英</td>
+        <td class="skill-name">栽培の達人</td>
+        <td><span class="badge badge-produce">生産</span></td>
+        <td>農園任命時、資源生産速度 +40%</td>
+      </tr>
+      <tr data-categories="special">
+        <td class="meishi-name">穆桂英</td>
+        <td class="skill-name">元帥</td>
+        <td><span class="badge badge-special">軍隊上限</span></td>
+        <td>燕雲烽火の中、全軍隊の上限数が +30% 増加</td>
+      </tr>
+
+      <!-- 岳飛 -->
+      <tr data-categories="attack buff">
+        <td class="meishi-name">岳飛</td>
+        <td class="skill-name">破虜の神槍</td>
+        <td><span class="badge badge-attack">攻撃</span><span class="badge badge-buff">デバフ</span></td>
+        <td>40%発動: 敵に200%ダメージ / 敵に「恐怖」付与 (行動前100%ダメ＆攻撃力-15% 2T)</td>
+      </tr>
+      <tr data-categories="produce">
+        <td class="meishi-name">岳飛</td>
+        <td class="skill-name">舗装の達人</td>
+        <td><span class="badge badge-produce">生産</span></td>
+        <td>舗装工場任命時、資源生産速度 +40%</td>
+      </tr>
+      <tr data-categories="buff">
+        <td class="meishi-name">岳飛</td>
+        <td class="skill-name">直接突進</td>
+        <td><span class="badge badge-buff">泰山バフ</span></td>
+        <td>泰山対決・泰山争覇の戦闘時、味方全体のダメージバフ +12%</td>
+      </tr>
+
+      <!-- 五竹 -->
+      <tr data-categories="attack">
+        <td class="meishi-name">五竹</td>
+        <td class="skill-name">レーザーアイ</td>
+        <td><span class="badge badge-attack">攻撃・消滅</span></td>
+        <td>40%発動: 敵に200%ダメージ / 敵前列1人を溶かし、30%で拡散してさらに前列1人を溶かす</td>
+      </tr>
+      <tr data-categories="produce">
+        <td class="meishi-name">五竹</td>
+        <td class="skill-name">合金達人</td>
+        <td><span class="badge badge-produce">生産</span></td>
+        <td>合金工場任命時、資源生産速度 +40%</td>
+      </tr>
+      <tr data-categories="buff">
+        <td class="meishi-name">五竹</td>
+        <td class="skill-name">大宗師の訓練</td>
+        <td><span class="badge badge-buff">特定キャラ強化</span></td>
+        <td>范閑の攻撃力と体力 +15%</td>
+      </tr>
+
+      <!-- アインシュタイン -->
+      <tr data-categories="attack defense">
+        <td class="meishi-name">アインシュタイン</td>
+        <td class="skill-name">時空の歪み</td>
+        <td><span class="badge badge-attack">攻撃</span><span class="badge badge-defense">シールド</span></td>
+        <td>40%発動: 敵に200%ダメージ / 味方に最大体力20%のシールド付与＋超過回復をシールド変換 (3T)</td>
+      </tr>
+      <tr data-categories="produce">
+        <td class="meishi-name">アインシュタイン</td>
+        <td class="skill-name">合金達人</td>
+        <td><span class="badge badge-produce">生産</span></td>
+        <td>合金工場任命時、資源生産速度 +40%</td>
+      </tr>
+      <tr data-categories="produce special">
+        <td class="meishi-name">アインシュタイン</td>
+        <td class="skill-name">相対性理論</td>
+        <td><span class="badge badge-special">発電バフ</span></td>
+        <td>発電所が通電建築に与える生産速度バフ +6%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+  let currentCategory = 'all';
+
+  function filterCategory(category, btn) {
+    currentCategory = category;
+    
+    // ボタンのスタイル切り替え
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    applyFilters();
+  }
+
+  function filterSearch() {
+    applyFilters();
+  }
+
+  function applyFilters() {
+    const searchText = document.getElementById('searchInput').value.toLowerCase();
+    const rows = document.querySelectorAll('#skillsTable tbody tr');
+
+    rows.forEach(row => {
+      const categories = row.getAttribute('data-categories').split(' ');
+      const text = row.innerText.toLowerCase();
+
+      const matchCategory = (currentCategory === 'all') || categories.includes(currentCategory);
+      const matchSearch = text.includes(searchText);
+
+      if (matchCategory && matchSearch) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+
+  // テーブルソート（五十音順・アルファベット順）
+  let sortDirection = false;
+  function sortTable(columnIndex) {
+    const table = document.getElementById("skillsTable");
+    const tbody = table.querySelector("tbody");
+    const rows = Array.from(tbody.querySelectorAll("tr"));
+
+    sortDirection = !sortDirection;
+
+    rows.sort((a, b) => {
+      const cellA = a.children[columnIndex].innerText.trim();
+      const cellB = b.children[columnIndex].innerText.trim();
+      return sortDirection 
+        ? cellA.localeCompare(cellB, 'ja') 
+        : cellB.localeCompare(cellA, 'ja');
+    });
+
+    rows.forEach(row => tbody.appendChild(row));
+  }
+</script>
+
+</body>
 </html>
