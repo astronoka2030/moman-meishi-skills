@@ -1251,7 +1251,7 @@
   function filterSearch() { applyFilters(); }
 
   function applyFilters() {
-    const searchText = document.getElementById('searchInput').value.toLowerCase();
+    const searchText = document.getElementById('searchInput').value.trim().toLowerCase();
     const rows = document.querySelectorAll('#skillsTable tbody tr');
 
     rows.forEach(row => {
@@ -1264,8 +1264,28 @@
       const matchSlot = (currentSlot === 'all') || (slot === currentSlot);
       const matchType = (currentType === 'all') || (type === currentType);
       const matchRank = (currentRank === 'all') || (rank === currentRank);
-      const matchCategory = (currentCategory === 'all') || category.includes(currentCategory);
-      const matchSearch = text.includes(searchText);
+
+      // 効果分類ボタンの厳密な判定（「バフ」ボタン選択時に「デバフ」を除外）
+      let matchCategory = false;
+      if (currentCategory === 'all') {
+        matchCategory = true;
+      } else if (currentCategory === 'バフ') {
+        const catWithoutDebuff = category.replace(/デバフ/g, '');
+        matchCategory = catWithoutDebuff.includes('バフ');
+      } else {
+        matchCategory = category.includes(currentCategory);
+      }
+
+      // 検索ボックスの判定（「バフ」入力時に「デバフ」を除外）
+      let matchSearch = false;
+      if (searchText === '') {
+        matchSearch = true;
+      } else if (searchText === 'バフ') {
+        const textWithoutDebuff = text.replace(/デバフ/g, '');
+        matchSearch = textWithoutDebuff.includes('バフ');
+      } else {
+        matchSearch = text.includes(searchText);
+      }
 
       row.style.display = (matchSlot && matchType && matchRank && matchCategory && matchSearch) ? '' : 'none';
     });
