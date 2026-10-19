@@ -160,5 +160,87 @@
     ],
     "category": "生産",
     "detail": "名士を酒坊に任命すると、その建築の資源生産速度+10%"
+  },
+  {
+    "name": "武太郎",
+    "rank": "優秀",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "お薬時間",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "通常攻撃デバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "20%発動: 敵に110%ダメ / 敵の通常攻撃ダメージ-8% (戦闘終了まで持続)"
+  },
+  {
+    "name": "武太郎",
+    "rank": "優秀",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "銅採掘の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を鉱山場に任命すると、その建築の資源生産速度+10%"
+  },
+  {
+    "name": "晁衡",
+    "rank": "優秀",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "お宝打ち",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "通常攻撃ダメバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "20%発動: 敵に120%ダメ / 味方の通常攻撃ダメージ+8% (戦闘終了まで持続)"
+  },
+  {
+    "name": "晁衡",
+    "rank": "優秀",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "火器の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を火器屋に任命すると、その建築の資源生産速度+10%"
+  },
+  {
+    "name": "呉剛",
+    "rank": "優秀",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "重斧斬り",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "通常攻撃ダメバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "20%発動: 敵に120%ダメ / 味方の通常攻撃ダメージ+8% (戦闘終了まで持続)"
+  },
+  {
+    "name": "呉剛",
+    "rank": "優秀",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "伐採の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を伐採場に任命すると、その建築の資源生産速度+10%"
   }
+
 ]
