@@ -1,0 +1,41 @@
+[
+  {
+    "name": "范閑",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "致命的狙撃",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃・追撃"}
+    ],
+    "category": "攻撃",
+    "detail": "40%発動: 敵に200%ダメージ / 55%で200%追加ダメ (敵体力20%未満で追加ダメがクリティカル化)"
+  },
+  {
+    "name": "范閑",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "中州達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "中州編建築任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "范閑",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "詩名天下に轟く",
+    "badges": [
+      {"class": "badge-defense", "text": "軽減"}
+    ],
+    "category": "軽減",
+    "detail": "低品質名士スキルからの被ダメージ -15%"
+  }
+]
