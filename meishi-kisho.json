@@ -586,6 +586,937 @@
     ],
     "category": "バフ",
     "detail": "戦闘開始時に味方謀略+1500 / 蛮族侵入防御時、味方全体のダメージバフ +12%"
+  },
+  {
+    "name": "姜子牙",
+    "rank": "伝説(希少)",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "餌食",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "デバフ"},
+      {"class": "badge-special", "text": "罠"}
+    ],
+    "category": "攻撃 バフ 特殊",
+    "detail": "40%発動: 敵に200%ダメージ＋罠付与 (敵の次3回行動前50%で120%ダメ＆ダメ軽減-20%)"
+  },
+  {
+    "name": "姜子牙",
+    "rank": "伝説(希少)",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "銅採掘の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "鉱山場任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "姜子牙",
+    "rank": "伝説(希少)",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "優れた謀略",
+    "badges": [
+      {"class": "badge-special", "text": "巡回土地"}
+    ],
+    "category": "特殊",
+    "detail": "領地巡回での土地獲得量 +6%"
+  },
+  {
+    "name": "チンギス・ハン",
+    "rank": "伝説(希少)",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "大弓射鷹",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "背水バフ"},
+      {"class": "badge-special", "text": "連撃"}
+    ],
+    "category": "攻撃 バフ 特殊",
+    "detail": "40%発動: 敵に200%ダメ (味方HP20%消失毎にダメバフ+20% 1ターン持続) / 30%で再発動 (敵HP50%未満で100%再発動)"
+  },
+  {
+    "name": "チンギス・ハン",
+    "rank": "伝説(希少)",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "舗装の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "舗装工場任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "チンギス・ハン",
+    "rank": "伝説(希少)",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "一代の英雄",
+    "badges": [
+      {"class": "badge-buff", "text": "全体バフ"}
+    ],
+    "category": "バフ",
+    "detail": "全ての帝王・名士の攻撃力と体力が +6%"
+  },
+  {
+    "name": "ダ・ヴィンチ",
+    "rank": "伝説(希少)",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "絵当て",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "追撃/回復"}
+    ],
+    "category": "攻撃 回復 特殊",
+    "detail": "40%発動: 敵に200%ダメ / モナ・リザ判定 (50%で150%追撃ダメ、50%で味方最大HP15%回復)"
+  },
+  {
+    "name": "ダ・ヴィンチ",
+    "rank": "伝説(希少)",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "栽培の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "農園任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "ダ・ヴィンチ",
+    "rank": "伝説(希少)",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "芸術の達人",
+    "badges": [
+      {"class": "badge-defense", "text": "泰山軽減"}
+    ],
+    "category": "軽減",
+    "detail": "泰山対決・泰山争覇の戦闘時、味方全体のダメージ軽減 +12%"
+  },
+  {
+    "name": "周瑜",
+    "rank": "伝説(希少)",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "赤壁の炎",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "デバフ"},
+      {"class": "badge-special", "text": "状態異常"}
+    ],
+    "category": "攻撃 バフ 特殊",
+    "detail": "40%発動: 敵に200%ダメ / 敵行動前に120%異常ダメ＆謀略値-800 (2ターン持続)"
+  },
+  {
+    "name": "周瑜",
+    "rank": "伝説(希少)",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "銅採掘の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "鉱山場任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "周瑜",
+    "rank": "伝説(希少)",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "周郎の才気",
+    "badges": [
+      {"class": "badge-special", "text": "軍隊上限"}
+    ],
+    "category": "特殊",
+    "detail": "赤壁の戦いで全軍隊の上限数 +30%"
+  },
+  {
+    "name": "郭嘉",
+    "rank": "伝説(希少)",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "破局鬼謀",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-defense", "text": "シールド"},
+      {"class": "badge-buff", "text": "謀略バフ"}
+    ],
+    "category": "攻撃 回復 バフ",
+    "detail": "40%発動: 敵に200%ダメ / 続く2ターンの間、各ターン開始時に味方最大HP15%シールド＆謀略+800"
+  },
+  {
+    "name": "郭嘉",
+    "rank": "伝説(希少)",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製紙の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "製紙場任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "郭嘉",
+    "rank": "伝説(希少)",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "天賦の才",
+    "badges": [
+      {"class": "badge-special", "text": "軍隊上限"}
+    ],
+    "category": "特殊",
+    "detail": "官渡の戦いにおいて、全軍隊の上限数 +30%"
+  },
+  {
+    "name": "孫権",
+    "rank": "伝説(希少)",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "江火焚天",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "火ダメバフ"},
+      {"class": "badge-special", "text": "燃焼"}
+    ],
+    "category": "攻撃 バフ 特殊",
+    "detail": "40%発動: 敵に200%ダメ＋燃焼 (敵攻撃前に攻撃力80%ダメ 2ターン持続)。油効果で敵火属性被ダメ+10% (2ターン持続)"
+  },
+  {
+    "name": "孫権",
+    "rank": "伝説(希少)",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "陶磁器の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "陶器屋任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "孫権",
+    "rank": "伝説(希少)",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "軍の倉庫",
+    "badges": [
+      {"class": "badge-produce", "text": "生産バフ"}
+    ],
+    "category": "生産",
+    "detail": "全名士の任命後基礎生産量 +15%"
+  },
+  {
+    "name": "帝王伏羲",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "破邪八卦陣",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "戴武/回復"}
+    ],
+    "category": "攻撃 回復 特殊",
+    "detail": "40%発動: 敵に200%ダメ＋「戴武」(行動前120%異常ダメ 2ターン持続。敵状態伏策ダメの5%が味方HPに転換)"
+  },
+  {
+    "name": "帝王伏羲",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "中州達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "中州編建築任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "帝王伏羲",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "先天霊気",
+    "badges": [
+      {"class": "badge-defense", "text": "軽減"}
+    ],
+    "category": "軽減",
+    "detail": "自身より品質の低い名士からのスキル被ダメージ -15%"
+  },
+  {
+    "name": "武則天",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "無字の天碑",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "回復"},
+      {"class": "badge-defense", "text": "軽減"}
+    ],
+    "category": "攻撃 回復 軽減",
+    "detail": "40%発動: 敵に200%ダメ / 味方HPを最大HP25%分回復＋ダメージ軽減+20% (3ターン持続)"
+  },
+  {
+    "name": "武則天",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "採石の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "採石場任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "武則天",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "謀略の女帝",
+    "badges": [
+      {"class": "badge-special", "text": "時空探検"}
+    ],
+    "category": "特殊",
+    "detail": "時空探検のまとめて挑戦の報酬 +6%"
+  },
+  {
+    "name": "孔子",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "聖人の戒め",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-defense", "text": "シールド"},
+      {"class": "badge-buff", "text": "敵バフ"}
+    ],
+    "category": "攻撃 回復 バフ",
+    "detail": "40%発動: 敵に200%ダメ / 敵は最大HP20%シールド＆ダメバフ+20%獲得 (3ターン持続)"
+  },
+  {
+    "name": "孔子",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "農業の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "農園任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "孔子",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "仁義礼智信",
+    "badges": [
+      {"class": "badge-defense", "text": "泰山軽減"}
+    ],
+    "category": "軽減",
+    "detail": "泰山対決・泰山争覇の戦闘時、味方全体のダメージ軽減 +16%"
+  },
+  {
+    "name": "唐太宗",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "天子の加護",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-defense", "text": "軽減"},
+      {"class": "badge-special", "text": "持続ダメ"}
+    ],
+    "category": "攻撃 軽減 特殊",
+    "detail": "40%発動: 敵に200%ダメ / 秦瓊と尉遅恭が味方の被ダメ-30%、毎ターン開始時敵に100%ダメ (3ターン持続)"
+  },
+  {
+    "name": "唐太宗",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "紡績の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "絹織物屋任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "唐太宗",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "凌煙閣",
+    "badges": [
+      {"class": "badge-defense", "text": "全体軽減"}
+    ],
+    "category": "軽減",
+    "detail": "あらゆる戦闘において、味方全体のダメージ軽減 +6%"
+  },
+  {
+    "name": "荘子",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "夢蝶",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "デバフ"},
+      {"class": "badge-special", "text": "スキル不可"}
+    ],
+    "category": "攻撃 バフ 特殊",
+    "detail": "40%発動: 敵に200%ダメ＋「夢蝶幻境」(被ダメ-24% 3ターン持続、次ターン40%でスキル使用不可)"
+  },
+  {
+    "name": "荘子",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "栽培の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "農園任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "荘子",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "逍遙遊",
+    "badges": [
+      {"class": "badge-special", "text": "宅地売却"}
+    ],
+    "category": "特殊",
+    "detail": "宅地の波乱中、家屋の売却価格 +6%"
+  },
+  {
+    "name": "孫武",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "進攻の謀略",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃・追撃"}
+    ],
+    "category": "攻撃",
+    "detail": "40%発動: 敵に200%ダメ / 優勢を勝ち取り、次の行動時のダメージがさらに +100%"
+  },
+  {
+    "name": "孫武",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製鉄の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "製鉄所任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "孫武",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "兵法の聖人",
+    "badges": [
+      {"class": "badge-buff", "text": "遠征バフ"}
+    ],
+    "category": "バフ",
+    "detail": "遠征中の軍隊の実力 +6%"
+  },
+  {
+    "name": "ニュートン",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "万物因果",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "幻覚/自傷"}
+    ],
+    "category": "攻撃 特殊",
+    "detail": "40%発動: 敵に200%ダメ / 50%で「幻覚」状態 (行動時自傷、1回分通常攻撃を行う 1ターン持続)"
+  },
+  {
+    "name": "ニュートン",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製鋼の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "製鋼所任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "ニュートン",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "科学の巨匠",
+    "badges": [
+      {"class": "badge-special", "text": "技能研究"}
+    ],
+    "category": "特殊",
+    "detail": "技能研究に必要な時間 -6%"
+  },
+  {
+    "name": "宋太祖",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "杯酒釈兵権",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "デバフ"},
+      {"class": "badge-special", "text": "スキル不可"}
+    ],
+    "category": "攻撃 バフ 特殊",
+    "detail": "40%発動: 敵200%ダメ / 味方デバフ1個解除 (1個毎敵ダメ軽減-30%) / ランダム5〜8人今回戦闘中スキル不可"
+  },
+  {
+    "name": "宋太祖",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "石炭採掘の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "炭鉱任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "宋太祖",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "皇帝即位",
+    "badges": [
+      {"class": "badge-buff", "text": "役戦バフ"}
+    ],
+    "category": "バフ",
+    "detail": "役戦で味方の実力 +6%"
+  },
+  {
+    "name": "劉備",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "雌雄双剣",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "バフ"},
+      {"class": "badge-special", "text": "回復"}
+    ],
+    "category": "攻撃 バフ 回復",
+    "detail": "40%発動: 敵200%ダメ / 味方士気高揚＆回復効果+10% / 毎ターン開始時最大HP10%回復 (3ターン持続)"
+  },
+  {
+    "name": "劉備",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製紙の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "製紙場任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "劉備",
+    "rank": "伝説(希少)",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "徳をもって人に接する",
+    "badges": [
+      {"class": "badge-special", "text": "顧問バフ"}
+    ],
+    "category": "特殊",
+    "detail": "顧問の自動選抜時に指定名士と資源バフを獲得する確率 +0.5倍"
+  },
+  {
+    "name": "万霊・女媧",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "元君の聖威",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "回復/無効"}
+    ],
+    "category": "攻撃 回復 軽減",
+    "detail": "40%発動: 敵200%ダメ / 味方HP25%回復(超過分はシールド) / 味方に「万物創生」(軽減+15%・致命ダメ無効・次2ターン被ダメ15%分全体回復)"
+  },
+  {
+    "name": "万霊・女媧",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "海国の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "海国編建築任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "万霊・女媧",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "万霊への恩恵",
+    "badges": [
+      {"class": "badge-defense", "text": "軽減"}
+    ],
+    "category": "軽減",
+    "detail": "自身より品質の低い名士からのスキル被ダメージ -15%"
+  },
+  {
+    "name": "老子",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "道は自然に従う",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "バフ/継続ダメ"}
+    ],
+    "category": "攻撃 バフ 軽減",
+    "detail": "40%発動: 敵200%ダメ＋3種効果（①人:味方軽減+40% 3ターン、②地:味方ダメバフ+40% 3ターン、③天:毎ターン敵80%ダメ 3ターン）を確率付与"
+  },
+  {
+    "name": "老子",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "砂採取の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "砂利採取場任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "老子",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "無為の治",
+    "badges": [
+      {"class": "badge-buff", "text": "探訪バフ"}
+    ],
+    "category": "バフ 軽減",
+    "detail": "五岳探訪中、味方のダメージ増加およびダメージ軽減 +6%"
+  },
+  {
+    "name": "項羽",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "覇王の力",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃・追撃"},
+      {"class": "badge-buff", "text": "バフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "40%発動: 敵200%ダメ＋攻撃力30%分のダメバフ＋50%の確率で150%の追加ダメージ"
+  },
+  {
+    "name": "項羽",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "畜産の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "牧場任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "項羽",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "覇王の威",
+    "badges": [
+      {"class": "badge-buff", "text": "時空探検バフ"}
+    ],
+    "category": "バフ",
+    "detail": "時空探検中、味方全体のダメージバフ +12%"
+  },
+  {
+    "name": "ナポレオン",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "重砲の洗礼",
+    "badges": [
+      {"class": "badge-attack", "text": "全体攻撃"},
+      {"class": "badge-buff", "text": "デバフ"},
+      {"class": "badge-special", "text": "スキル不可"}
+    ],
+    "category": "攻撃 バフ 特殊",
+    "detail": "40%発動: 敵全体200%ダメ / 敵の防御値破損＆ダメ軽減-20% (2ターン持続) / 敵3人のスキル発動不可 (2ターン持続)"
+  },
+  {
+    "name": "ナポレオン",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "火器の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "火器屋任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "ナポレオン",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "王者の風格",
+    "badges": [
+      {"class": "badge-buff", "text": "遠征バフ"}
+    ],
+    "category": "バフ",
+    "detail": "世界遠征中に実力 +6%"
+  },
+  {
+    "name": "呂布",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "天下無双",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "バフ/デバフ"},
+      {"class": "badge-special", "text": "シールド貫通"}
+    ],
+    "category": "攻撃 バフ 特殊",
+    "detail": "40%発動: 敵200%ダメ＋攻撃バフ30%＋ダメ40%分シールド貫通＋敵ダメ軽減-30% (3ターン持続)"
+  },
+  {
+    "name": "呂布",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "採石の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "採石場任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "呂布",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "飛将の威",
+    "badges": [
+      {"class": "badge-special", "text": "軍隊上限"}
+    ],
+    "category": "特殊",
+    "detail": "薫卓討伐において、全軍隊の上限数 +30%"
+  },
+  {
+    "name": "曹操",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "七星宝刀",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "反射"}
+    ],
+    "category": "攻撃 特殊",
+    "detail": "40%発動: 敵200%ダメ＋「我を失望させることは許さん」(敵対象の怒りによりスキルダメ受ける際、15%ダメ反撃 3ターン持続)"
+  },
+  {
+    "name": "曹操",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製茶の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "茶園任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "曹操",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "乱世の梟雄",
+    "badges": [
+      {"class": "badge-special", "text": "軍隊上限"}
+    ],
+    "category": "特殊",
+    "detail": "三国の覇者において、全軍隊の上限数 +30%"
+  },
+  {
+    "name": "関羽",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "飛龍天翔",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃・連撃"}
+    ],
+    "category": "攻撃",
+    "detail": "40%発動: 敵200%ダメ / 初2Tは発動率2倍 / 2T以内再発動時200%追加ダメ / 2T後発動時50%追加ダメ"
+  },
+  {
+    "name": "関羽",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "砂採取の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "砂利採取場任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "関羽",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "単騎千里を走る",
+    "badges": [
+      {"class": "badge-special", "text": "通貨獲得"}
+    ],
+    "category": "特殊",
+    "detail": "シルクロードの通商を無料加速させると獲得通貨 +6%"
+  },
+  {
+    "name": "漢武帝",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "天威疾風",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "バフ解除"},
+      {"class": "badge-special", "text": "召喚"}
+    ],
+    "category": "攻撃 バフ 特殊",
+    "detail": "40%発動: 敵200%ダメ＋敵増益解除1〜3個(1個毎ダメ+30%)。霍去病出陣中等で50%確率で雲長召喚(戦闘中1回)"
+  },
+  {
+    "name": "漢武帝",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製紙の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "製紙場任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "漢武帝",
+    "rank": "伝説(希少)",
+    "type": "騎",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "千里の逐敵",
+    "badges": [
+      {"class": "badge-buff", "text": "漠北バフ"}
+    ],
+    "category": "バフ 軽減",
+    "detail": "漠北対決時に味方全体の与ダメージおよびダメージ軽減がそれぞれ +6%"
   }
-
 ]
