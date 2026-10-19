@@ -84,33 +84,6 @@
     "detail": "(※最大レベル時) 西域開拓の実力+60% / シルクロード通商の銅貨報酬が最大値に固定"
   },
   {
-    "name": "星神夸父",
-    "rank": "卓越",
-    "type": "盾",
-    "slot": "1",
-    "slotName": "戦闘",
-    "skillName": "投技為林",
-    "badges": [
-      {"class": "badge-attack", "text": "攻撃"},
-      {"class": "badge-special", "text": "印付与/通常攻撃変化"}
-    ],
-    "category": "攻撃 特殊",
-    "detail": "(※最大レベル時) 20%発動: 敵に260%ダメ / 100%で敵6〜9人に「春日の印」付与 (印2ターン持続)"
-  },
-  {
-    "name": "星神夸父",
-    "rank": "卓越",
-    "type": "盾",
-    "slot": "2",
-    "slotName": "生産",
-    "skillName": "採石の達人",
-    "badges": [
-      {"class": "badge-produce", "text": "生産"}
-    ],
-    "category": "生産",
-    "detail": "(※最大レベル時) 採石場任命時、資源生産速度 +92%"
-  },
-  {
     "name": "始祖黄帝",
     "rank": "無双",
     "type": "槍",
