@@ -1,0 +1,200 @@
+[
+  {
+    "name": "婦好",
+    "rank": "伝説",
+    "type": "槍",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "陣形突破",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "デバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "30%発動: 敵に160%ダメージ / 敵の陣形が乱れ、敵のダメージ軽減 -20% / 合計攻撃力 -10% (3ターン持続)"
+  },
+  {
+    "name": "婦好",
+    "rank": "伝説",
+    "type": "槍",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "農業の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "農場任命時、資源生産速度 +30%"
+  },
+  {
+    "name": "婦好",
+    "rank": "伝説",
+    "type": "槍",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "千磨百錬",
+    "badges": [
+      {"class": "badge-buff", "text": "実力バフ"}
+    ],
+    "category": "バフ",
+    "detail": "同盟の領地の土地を攻撃する際、味方の兵士実力 +6%"
+  },
+  {
+    "name": "荊軻",
+    "rank": "伝説",
+    "type": "槍",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "真相露見",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "バフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "30%発動: 敵に160%ダメージ / 味方のダメージバフ +10% / ダメージ軽減 +10% (3ターン持続)"
+  },
+  {
+    "name": "荊軻",
+    "rank": "伝説",
+    "type": "槍",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "砂採取の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "砂利採取場任命時、資源生産速度 +30%"
+  },
+  {
+    "name": "荊軻",
+    "rank": "伝説",
+    "type": "槍",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "隙の利",
+    "badges": [
+      {"class": "badge-attack", "text": "与ダメ上昇"}
+    ],
+    "category": "攻撃",
+    "detail": "七雄争覇での与ダメージ +6%"
+  },
+  {
+    "name": "包拯",
+    "rank": "伝説",
+    "type": "槍",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "即断即決",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "バフ延長"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "30%発動: 敵に160%ダメージ / 50%で自身の全てのバフを1ターン延長"
+  },
+  {
+    "name": "包拯",
+    "rank": "伝説",
+    "type": "槍",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "硝子の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "硝子屋任命時、資源生産速度 +30%"
+  },
+  {
+    "name": "包拯",
+    "rank": "伝説",
+    "type": "槍",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "龍図学士",
+    "badges": [
+      {"class": "badge-special", "text": "産出バフ"}
+    ],
+    "category": "特殊",
+    "detail": "封禅の道具の産出 +6%"
+  },
+  {
+    "name": "鄭和",
+    "rank": "伝説",
+    "type": "槍",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "出帆の時",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃・追撃"}
+    ],
+    "category": "攻撃",
+    "detail": "30%発動: 敵に160%ダメージ / 戦闘中の攻撃力の50%のダメージを与える「出帆」標記を付与 (3ターン持続)"
+  },
+  {
+    "name": "鄭和",
+    "rank": "伝説",
+    "type": "槍",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "硝子の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "硝子屋任命時、資源生産速度 +30%"
+  },
+  {
+    "name": "鄭和",
+    "rank": "伝説",
+    "type": "槍",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "艦隊統率者",
+    "badges": [
+      {"class": "badge-buff", "text": "戦力バフ"}
+    ],
+    "category": "バフ",
+    "detail": "四海無双での戦力 +12%"
+  },
+  {
+    "name": "卑弥呼",
+    "rank": "伝説",
+    "type": "槍",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "天罰降臨",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃・即死"}
+    ],
+    "category": "攻撃 特殊",
+    "detail": "30%発動: 敵に160%ダメージ / 50%で神罰を下し生存している名士1人を抹消"
+  },
+  {
+    "name": "卑弥呼",
+    "rank": "伝説",
+    "type": "槍",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "採石の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "採石場任命時、資源生産速度 +30%"
+  },
+  {
+    "name": "卑弥呼",
+    "rank": "伝説",
+    "type": "槍",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "神の啓示",
+    "badges": [
+      {"class": "badge-special", "text": "時短バフ"}
+    ],
+    "category": "特殊",
+    "detail": "技能の研究時間 -6%"
+  }
+]
