@@ -1,5 +1,324 @@
 [
   {
+    "name": "ナポレオン",
+    "rank": "無双",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "砲煙の洗礼",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-defense", "text": "軽減/スキル封印"}
+    ],
+    "category": "攻撃 軽減 特殊",
+    "detail": "40%発動: 敵に200%ダメ / 敵のダメ軽減-20%(2ターン) / 敵2名スキル不可(2ターン持続)"
+  },
+  {
+    "name": "ナポレオン",
+    "rank": "無双",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "火器の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を火器屋に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "ナポレオン",
+    "rank": "無双",
+    "type": "騎",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "王者の風格",
+    "badges": [
+      {"class": "badge-buff", "text": "実力バフ"}
+    ],
+    "category": "バフ",
+    "detail": "世界遠征征中、味方の実力+6%"
+  },
+  {
+    "name": "チンギス・ハン",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "大射奮震",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "体力・ダメバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "40%発動: 敵に200%ダメ / 味方体力20%回復 / 20%ダメバフ(1ターン) / 30%でスキル再発動"
+  },
+  {
+    "name": "チンギス・ハン",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "舗装の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を舗装工場に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "チンギス・ハン",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "一代の英雄",
+    "badges": [
+      {"class": "badge-buff", "text": "攻撃・体力バフ"}
+    ],
+    "category": "バフ",
+    "detail": "全ての帝王名士の攻撃力と体力+4%"
+  },
+  {
+    "name": "呂布",
+    "rank": "無双",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "天下無双",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "攻撃バフ/シールド貫通"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "40%発動: 敵に200%ダメ / 30%攻撃バフ付与 / シールド貫通 / 敵ダメ軽減-30%(3ターン)"
+  },
+  {
+    "name": "呂布",
+    "rank": "無双",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "採石の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を採石場に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "呂布",
+    "rank": "無双",
+    "type": "騎",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "飛将の威",
+    "badges": [
+      {"class": "badge-special", "text": "軍糧上限バフ"}
+    ],
+    "category": "特殊",
+    "detail": "董卓討伐において、全ての軍糧の上限数+30%"
+  },
+  {
+    "name": "ダ・ヴィンチ",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "絵当て",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "HP回復/追加ダメ"}
+    ],
+    "category": "攻撃 回復",
+    "detail": "40%発動: 敵に200%ダメ / 50%で150%追加ダメ / 50%で味方2名の最大体力16%回復"
+  },
+  {
+    "name": "ダ・ヴィンチ",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "栽培の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を農場に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "ダ・ヴィンチ",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "芸術の達人",
+    "badges": [
+      {"class": "badge-defense", "text": "軽減"}
+    ],
+    "category": "軽減",
+    "detail": "泰山対決、泰山争覇の戦闘時、味方全体のダメージ軽減+12%"
+  },
+  {
+    "name": "周瑜",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "赤壁の炎",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "状態異常デバフ"}
+    ],
+    "category": "攻撃 特殊",
+    "detail": "40%発動: 敵に200%ダメ / 敵「異常」(行動前120%ダメ、謀略値-800、2ターン持続)"
+  },
+  {
+    "name": "周瑜",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "銅採掘の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を鉱山場に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "周瑜",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "周郎の才気",
+    "badges": [
+      {"class": "badge-special", "text": "軍糧上限バフ"}
+    ],
+    "category": "特殊",
+    "detail": "赤壁の戦いで全軍糧の上限数+30%"
+  },
+  {
+    "name": "唐太宗",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "天子の加護",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-defense", "text": "全体軽減/持続ダメ"}
+    ],
+    "category": "攻撃 軽減",
+    "detail": "40%発動: 敵に200%ダメ / 味方全体の被ダメ30%軽減 / 毎ターン開始時に100%ダメ(3ターン持続)"
+  },
+  {
+    "name": "唐太宗",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "紡績の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を織物屋に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "唐太宗",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "凌煙閣",
+    "badges": [
+      {"class": "badge-defense", "text": "全体軽減"}
+    ],
+    "category": "軽減",
+    "detail": "あらゆる戦闘において、味方全体のダメージ軽減+6%"
+  },
+  {
+    "name": "曹操",
+    "rank": "無双",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "七星宝刀",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "反射ダメ"}
+    ],
+    "category": "攻撃 特殊",
+    "detail": "40%発動: 敵に200%ダメ / スキルダメージを受けた際、即座に15%のダメージを継続(3ターン継続)"
+  },
+  {
+    "name": "曹操",
+    "rank": "無双",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製茶の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を茶園に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "曹操",
+    "rank": "無双",
+    "type": "騎",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "乱世の奸雄",
+    "badges": [
+      {"class": "badge-special", "text": "軍糧上限バフ"}
+    ],
+    "category": "特殊",
+    "detail": "三国覇者において、全軍糧の上限数+30%"
+  },
+  {
+    "name": "関羽",
+    "rank": "無双",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "飛龍翔天",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃・追加ダメ"}
+    ],
+    "category": "攻撃",
+    "detail": "40%発動: 敵に200%ダメ / スキル発動確率2倍(2ターン) / 2ターン以内に再発動で200%ダメ＋50%追加ダメ"
+  },
+  {
+    "name": "関羽",
+    "rank": "無双",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "砂採取の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を砂利採取場に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "関羽",
+    "rank": "無双",
+    "type": "騎",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "単騎千里を走る",
+    "badges": [
+      {"class": "badge-special", "text": "通貨獲得"}
+    ],
+    "category": "特殊",
+    "detail": "シルクロードの通商を無料で加速させ、獲得銅貨+6%"
+  },
+  {
     "name": "ニュートン",
     "rank": "無双",
     "type": "盾",
