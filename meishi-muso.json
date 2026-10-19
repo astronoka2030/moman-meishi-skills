@@ -1,4 +1,287 @@
 [
+    {
+    "name": "老子",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "道は自然に従う",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "ランダムバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "40%発動: 敵に200%ダメ / 自然の道(味方ダメ軽減+40%、味方ダメバフ+42%、毎ターン敵に84%ダメの3種)からランダムで効果獲得"
+  },
+  {
+    "name": "老子",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "砂採取の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を砂利採取場に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "老子",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "無為の治",
+    "badges": [
+      {"class": "badge-defense", "text": "ダメバフ/軽減"}
+    ],
+    "category": "軽減",
+    "detail": "味方のダメージ増加とダメージ軽減+6%"
+  },
+  {
+    "name": "武則天",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "無字の天碑",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "HP回復"},
+      {"class": "badge-defense", "text": "軽減"}
+    ],
+    "category": "攻撃 回復 軽減",
+    "detail": "40%発動: 敵に200%ダメ / 味方最大HP25%回復 / 味方ダメ軽減+20% (3ターン持続)"
+  },
+  {
+    "name": "武則天",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "採石の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を採石場に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "武則天",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "謀略の女帝",
+    "badges": [
+      {"class": "badge-special", "text": "報酬量バフ"}
+    ],
+    "category": "特殊",
+    "detail": "時空探検のまとめて挑戦の報酬+6%"
+  },
+  {
+    "name": "孔子",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "聖人の戒め",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-defense", "text": "シールド"},
+      {"class": "badge-buff", "text": "ダメバフ"}
+    ],
+    "category": "攻撃 軽減 バフ",
+    "detail": "40%発動: 敵に200%ダメ / 味方に最大体力20%分のシールド獲得 / ダメージバフ+20% (3ターン持続)"
+  },
+  {
+    "name": "孔子",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "農業の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を農場に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "孔子",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "仁義礼智信",
+    "badges": [
+      {"class": "badge-defense", "text": "軽減"}
+    ],
+    "category": "軽減",
+    "detail": "泰山対決、泰山争覇の戦闘時、味方全体のダメージ軽減+12%"
+  },
+  {
+    "name": "項羽",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "覇王の力",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "ダメバフ/追加ダメ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "40%発動: 敵に200%ダメ / 30%ダメバフ付与 / 50%で150%追加ダメ"
+  },
+  {
+    "name": "項羽",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "畜産の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を牧場に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "項羽",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "覇王の威",
+    "badges": [
+      {"class": "badge-buff", "text": "全体ダメバフ"}
+    ],
+    "category": "バフ",
+    "detail": "時空探検中、味方全体のダメージバフ+12%"
+  },
+  {
+    "name": "姜子牙",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "餌食",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "罠/軽減"}
+    ],
+    "category": "攻撃 軽減",
+    "detail": "40%発動: 敵に200%ダメ / 敵に罠を仕掛け行動前に50%で(攻撃力120%ダメ＋被ダメ軽減-20%)"
+  },
+  {
+    "name": "姜子牙",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "銅採掘の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を鉱山場に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "姜子牙",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "優れた謀略",
+    "badges": [
+      {"class": "badge-special", "text": "土地獲得"}
+    ],
+    "category": "特殊",
+    "detail": "領地図回での土地獲得量+6%"
+  },
+  {
+    "name": "万霊・女媧",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "元臣の聖威",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "HP回復"},
+      {"class": "badge-defense", "text": "軽減/致死無効"}
+    ],
+    "category": "攻撃 回復 軽減",
+    "detail": "40%発動: 敵に200%ダメ / 味方最大HP25%回復 / 味方「万物創生」(ダメ軽減+15%、致死ダメ1回無効＆回復。1回のみ・戦闘終了まで持続) / 解放後2ターンの被ダメ15%分体力を回復"
+  },
+  {
+    "name": "万霊・女媧",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "淘国の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を淘国国のいずれかの建築に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "万霊・女媧",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "万霊への恩恵",
+    "badges": [
+      {"class": "badge-defense", "text": "被ダメ軽減"}
+    ],
+    "category": "軽減",
+    "detail": "自身より品質の低い名士からスキルダメージを受けた時、全ての被ダメージ-15%"
+  },
+  {
+    "name": "帝王伏羲",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "破邪八卦陣",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "状態異常"}
+    ],
+    "category": "攻撃 特殊",
+    "detail": "40%発動: 敵に200%ダメ / 敵「致滅」(行動前、攻撃120%の状態で状態異常ダメ、2ターン持続) / 伏羲の状態異常ダメの5%が味方の体力を回復"
+  },
+  {
+    "name": "帝王伏羲",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "中州達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を中州編のいずれかの建築に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "帝王伏羲",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "先天霊気",
+    "badges": [
+      {"class": "badge-defense", "text": "被ダメ軽減"}
+    ],
+    "category": "軽減",
+    "detail": "自身より品質の低い名士からスキルダメージを受けた際、全ての被ダメージ-15%"
+  },
   {
     "name": "ノーベル",
     "rank": "無双",
