@@ -377,5 +377,114 @@
     ],
     "category": "生産",
     "detail": "名士を鉱山場に任命すると、その建築の資源生産速度+20%"
+  },
+  {
+    "name": "田忌",
+    "rank": "卓越",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "行け、上等馬",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "スキルダメバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "25%発動: 敵に140%ダメ / 30%で上等馬を率いスキルダメ+50%"
+  },
+  {
+    "name": "田忌",
+    "rank": "卓越",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "畜産の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を牧場に任命すると、その建築の資源生産速度+20%"
+  },
+  {
+    "name": "マルコ・ポーロ",
+    "rank": "卓越",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "一発お見舞い",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "HP回復"}
+    ],
+    "category": "攻撃 回復",
+    "detail": "25%発動: 敵に140%ダメ / 味方最大HP10%回復"
+  },
+  {
+    "name": "マルコ・ポーロ",
+    "rank": "卓越",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "火器の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を火器屋に任命すると、その建築の資源生産速度+20%"
+  },
+  {
+    "name": "勾践",
+    "rank": "卓越",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "苦胆攻撃",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "ダメバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "25%発動: 敵に160%ダメ / 味方忍耐力上昇により体力を20%失うごとにダメバフ+20%"
+  },
+  {
+    "name": "勾践",
+    "rank": "卓越",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製茶の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を茶園に任命すると、その建築の資源生産速度+20%"
+  },
+  {
+    "name": "伯楽",
+    "rank": "卓越",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "千里の駿馬",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "ダメバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "25%発動: 敵に140%ダメ / 20%のダメバフ付与"
+  },
+  {
+    "name": "伯楽",
+    "rank": "卓越",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "畜産の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を牧場に任命すると、その建築の資源生産速度+20%"
   }
+
 ]
