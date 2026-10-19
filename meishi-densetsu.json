@@ -235,7 +235,7 @@
       {"class": "badge-special", "text": "兵力損失軽減"}
     ],
     "category": "特殊",
-    "detail": "武王は兵士たちの不屈の意志を鍛えるのが得意だ。征戦での兵力の損失-6%。"
+    "detail": "征戦での兵力の損失-6%。"
   },
   {
     "name": "張良",
@@ -276,7 +276,7 @@
       {"class": "badge-special", "text": "通貨獲得"}
     ],
     "category": "バフ 特殊",
-    "detail": "戦闘開始時に、味方の謀略値+1000。張良は軍事だけでなく国を治めることにも長けている。シルクロードの通商で獲得できる銅貨+6%。"
+    "detail": "戦闘開始時に、味方の謀略値+1000。シルクロードの通商で獲得できる銅貨+6%。"
   },
   {
     "name": "李白",
@@ -316,7 +316,7 @@
       {"class": "badge-special", "text": "販売量バフ"}
     ],
     "category": "特殊",
-    "detail": "李白の詩により市場の商品が大人気となった。屋台での1回の販売量+6%。"
+    "detail": "屋台での1回の販売量+6%。"
   },
   {
     "name": "林則徐",
@@ -330,7 +330,7 @@
       {"class": "badge-special", "text": "回復強化"}
     ],
     "category": "攻撃 特殊",
-    "detail": "30%の確率で発動。山高きこと千仞、欲無ければ剛なる割り角なり。林則徐が敵に攻撃力160%のダメージを与える。海皿を納める、弱き者ありて方立ちなり。林則徐が味方の回復強化+30%(戦闘終了まで持続)"
+    "detail": "30%の確率で発動。攻撃力160%のダメージを与える。味方の回復強化+30%(戦闘終了まで持続)"
   },
   {
     "name": "林則徐",
@@ -356,7 +356,208 @@
       {"class": "badge-produce", "text": "全建築生産量バフ"}
     ],
     "category": "生産",
-    "detail": "林則徐は世界を見通し、国のことを思う。全建築の生産速度+6%。"
+    "detail": "全建築の生産速度+6%。"
+  },
+  {
+    "name": "玄奘",
+    "rank": "伝説",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "弟子ちゃん助けて",
+    "badges": [
+      {"class": "badge-defense", "text": "軽減"},
+      {"class": "badge-buff", "text": "デバフ"}
+    ],
+    "category": "軽減 バフ",
+    "detail": "30%発動: 敵に160%ダメ / 味方ダメ軽減+10% / 敵ダメ軽減-10% (3ターン持続)"
+  },
+  {
+    "name": "玄奘",
+    "rank": "伝説",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製茶の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を茶園に任命すると、その建築の資源生産速度+30%"
+  },
+  {
+    "name": "玄奘",
+    "rank": "伝説",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "禅心の悟り",
+    "badges": [
+      {"class": "badge-special", "text": "研究消費軽減"}
+    ],
+    "category": "特殊",
+    "detail": "技能研究の資源消費-6%"
+  },
+  {
+    "name": "墨子",
+    "rank": "伝説",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "巨機投げ",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "スキルダメバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "30%発動: 敵に160%ダメ / 味方スキルダメージ+20% (3ターン持続)"
+  },
+  {
+    "name": "墨子",
+    "rank": "伝説",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "陶磁器の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を陶器屋に任命すると、その建築の資源生産速度+30%"
+  },
+  {
+    "name": "墨子",
+    "rank": "伝説",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "墨家の絡繰",
+    "badges": [
+      {"class": "badge-special", "text": "昇級消費軽減"}
+    ],
+    "category": "特殊",
+    "detail": "建築の昇級に必要な資源消費-6%"
+  },
+  {
+    "name": "扁鵲",
+    "rank": "伝説",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "救いの医術",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "HP回復"},
+      {"class": "badge-defense", "text": "軽減"}
+    ],
+    "category": "攻撃 回復 軽減",
+    "detail": "30%発動: 敵に160%ダメ / 味方最大HP10%回復 / 味方ダメ軽減+10% (3ターン持続)"
+  },
+  {
+    "name": "扁鵲",
+    "rank": "伝説",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "紡績の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を織物屋に任命すると、その建築の資源生産速度+30%"
+  },
+  {
+    "name": "扁鵲",
+    "rank": "伝説",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "薬神",
+    "badges": [
+      {"class": "badge-special", "text": "治療消費軽減"}
+    ],
+    "category": "特殊",
+    "detail": "負傷兵の治療に必要な資源消費-6%"
+  },
+  {
+    "name": "蘇軾",
+    "rank": "伝説",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "月宮降臨",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-defense", "text": "致死ダメ無効"}
+    ],
+    "category": "攻撃 軽減",
+    "detail": "30%発動: 敵に160%ダメ / 50%で「満月」(致死ダメ1回無効、発動1回のみ・戦闘終了まで持続)"
+  },
+  {
+    "name": "蘇軾",
+    "rank": "伝説",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "舗装の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を舗装工場に任命すると、その建築の資源生産速度+30%"
+  },
+  {
+    "name": "蘇軾",
+    "rank": "伝説",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "学士風流",
+    "badges": [
+      {"class": "badge-special", "text": "通貨獲得"}
+    ],
+    "category": "特殊",
+    "detail": "シルクロード派遣で得られる銅貨+6%"
+  },
+  {
+    "name": "戚継光",
+    "rank": "伝説",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "敵陣攻略",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "バフ/デバフ解除"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "30%発動: 敵に160%ダメ / 30%で味方デバフ2つ＆敵バフ2つ解除"
+  },
+  {
+    "name": "戚継光",
+    "rank": "伝説",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "石炭採掘の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を炭鉱に任命すると、その建築の資源生産速度+30%"
+  },
+  {
+    "name": "戚継光",
+    "rank": "伝説",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "練兵実録",
+    "badges": [
+      {"class": "badge-defense", "text": "軽減"}
+    ],
+    "category": "軽減",
+    "detail": "匈奴との戦闘時、味方全体のダメージ軽減+12%"
   }
 ]
 
