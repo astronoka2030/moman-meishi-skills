@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>モーマンタイム 名士スキル一覧 (Lv.1初期値)</title>
+<style>
+  body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 8px;
+    margin: 0;
+  }
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  .controls {
+    max-width: 1100px;
+    margin: 0 auto 12px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-items: center;
+  }
+  .group-title {
+    font-size: 11px;
+    font-weight: bold;
+    color: #64748b;
+    margin-right: 2px;
+    min-width: 60px;
+  }
+  .btn {
+    border: none;
+    padding: 4px 8px;
+    border-radius: 12px;
+    background-color: #f1f5f9;
+    color: #475569;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .btn:hover { background-color: #e2e8f0; }
+  .btn.active { background-color: #2563eb; color: #ffffff; }
+  .search-row { display: flex; justify-content: flex-end; margin-top: 2px; }
+  .search-box {
+    padding: 5px 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 16px;
+    font-size: 12px;
+    outline: none;
+    width: 100%;
+  }
+  .table-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow-x: auto;
+    position: relative;
+  }
+  table { 
+    width: 100%; 
+    border-collapse: separate; 
+    border-spacing: 0; 
+    min-width: 620px;
+  }
+  th, td { 
+    padding: 6px 4px; 
+    text-align: left; 
+    border-bottom: 1px solid #e1e8ed; 
+    font-size: 10.5px;
+    line-height: 1.25;
+  }
+  th {
+    background-color: #34495e;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 10.5px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    white-space: nowrap;
+  }
+
+  /* 名士名列（1列目）固定 */
+  th:first-child, td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 5;
+    box-shadow: 2px 0 4px rgba(0,0,0,0.08);
+    width: 3.8em;
+    max-width: 3.8em;
+    word-break: break-all;
+    white-space: normal;
+  }
+  th:first-child { background-color: #2c3e50; z-index: 15; }
+  td:first-child { background-color: #ffffff; }
+  tr:hover td:first-child { background-color: #f8f9fa; }
+
+  .meishi-name { font-weight: bold; font-size: 10.5px; color: #1e293b; line-height: 1.2; }
+  .rank-badge { display: inline-block; padding: 2px 3px; border-radius: 3px; font-size: 9.5px; font-weight: bold; white-space: nowrap; }
+  .rank-rare-legend { background-color: #fef3c7; color: #b45309; border: 1px solid #f59e0b; }
+  .rank-ex { background-color: #e0e7ff; color: #3730a3; }
+  .type-badge { display: inline-block; padding: 2px 4px; border-radius: 3px; font-size: 9.5px; font-weight: bold; background-color: #e2e8f0; color: #334155; white-space: nowrap; }
+  
+  .slot-badge { display: inline-block; padding: 2px 4px; border-radius: 3px; font-size: 9.5px; font-weight: bold; white-space: nowrap; }
+  .slot-1 { background-color: #fee2e2; color: #991b1b; }
+  .slot-2 { background-color: #dcfce7; color: #166534; }
+  .slot-3 { background-color: #f3e8ff; color: #6b21a8; }
+
+  .badge { display: inline-block; padding: 2px 3px; border-radius: 3px; font-size: 9.5px; font-weight: bold; color: #fff; margin-right: 1px; white-space: nowrap; }
+  .badge-attack { background-color: #e74c3c; }
+  .badge-buff { background-color: #e67e22; }
+  .badge-defense { background-color: #2980b9; }
+  .badge-produce { background-color: #27ae60; }
+  .badge-special { background-color: #8e44ad; }
+
+  .skill-name { font-weight: bold; color: #2c3e50; font-size: 10.5px; white-space: normal; line-height: 1.2; max-width: 5.5em; word-break: break-all; }
+
+  /* 修正フォーム用CSS */
+  .feedback-container { max-width: 1100px; margin: 20px auto; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+  .feedback-title { font-size: 14px; font-weight: bold; color: #2c3e50; margin-bottom: 8px; }
+  .feedback-textarea { width: 100%; height: 70px; padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 12px; box-sizing: border-box; resize: vertical; outline: none; margin-bottom: 8px; }
+  .feedback-file-input { font-size: 11px; color: #475569; }
+  .feedback-btn { padding: 8px 16px; background-color: #2563eb; color: #ffffff; border: none; border-radius: 6px; font-size: 12px; font-weight: bold; cursor: pointer; float: right; }
+  .feedback-btn:hover { background-color: #1d4ed8; }
+  .feedback-clearfix::after { content: ""; clear: both; display: table; }
+</style>
+</head>
+<body>
+
+<h1>🧔‍♀️ 名士スキル効果一覧 (Lv.1 初期性能)</h1>
+
+<div class="controls">
+  <div class="filter-group">
+    <div class="group-title">📌 スキル枠:</div>
+    <button class="btn active" onclick="filterSlot('all', this)">すべて</button>
+    <button class="btn" onclick="filterSlot('1', this)">戦闘</button>
+    <button class="btn" onclick="filterSlot('2', this)">生産</button>
+    <button class="btn" onclick="filterSlot('3', this)">パッシブ</button>
+  </div>
+
+  <div class="filter-group">
+    <div class="group-title">⚔️ 兵種:</div>
+    <button class="btn active" onclick="filterType('all', this)">すべて</button>
+    <button class="btn" onclick="filterType('槍', this)">槍</button>
+    <button class="btn" onclick="filterType('弓', this)">弓</button>
+    <button class="btn" onclick="filterType('盾', this)">盾</button>
+    <button class="btn" onclick="filterType('騎', this)">騎</button>
+  </div>
+
+  <div class="filter-group">
+    <div class="group-title">⭐ ランク:</div>
+    <button class="btn active" onclick="filterRank('all', this)">すべて</button>
+    <button class="btn" onclick="filterRank('無双', this)">無双</button>
+    <button class="btn" onclick="filterRank('伝説(希少)', this)">伝説(希少)</button>
+    <button class="btn" onclick="filterRank('伝説', this)">伝説</button>
+    <button class="btn" onclick="filterRank('卓越', this)">卓越</button>
+    <button class="btn" onclick="filterRank('優秀', this)">優秀</button>
+  </div>
+
+  <div class="filter-group">
+    <div class="group-title">🏷️ 効果分類:</div>
+    <button class="btn active" onclick="filterCategory('all', this)">すべて</button>
+    <button class="btn" onclick="filterCategory('攻撃', this)">攻撃</button>
+    <button class="btn" onclick="filterCategory('生産', this)">生産</button>
+    <button class="btn" onclick="filterCategory('軽減', this)">軽減</button>
+    <button class="btn" onclick="filterCategory('バフ', this)">バフ/デバフ</button>
+    <button class="btn" onclick="filterCategory('回復', this)">回復/シールド</button>
+    <button class="btn" onclick="filterCategory('特殊', this)">特殊効果</button>
+  </div>
+
+  <div class="search-row">
+    <input type="text" id="searchInput" class="search-box" placeholder="名士・スキル・効果で検索..." onkeyup="filterSearch()">
+  </div>
+</div>
+
+<div class="table-container">
+  <table id="skillsTable">
+    <thead>
+      <tr>
+        <th>名士名</th>
+        <th>ランク</th>
+        <th>兵種</th>
+        <th>スキル枠</th>
+        <th>スキル名</th>
+        <th>効果分類</th>
+        <th>Lv.1 スキル効果概要</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 各ランクのJSONから動的に追加されます -->
+    </tbody>
+  </table>
+</div>
+
+<!-- 修正希望フォーム -->
+<div class="feedback-container feedback-clearfix">
+  <div class="feedback-title">💬 修正希望・メッセージ送信用</div>
+  <textarea id="feedbackText" class="feedback-textarea" placeholder="修正希望や追加情報があればこちらに入力してください..."></textarea>
+  <input type="file" id="feedbackImage" class="feedback-file-input" accept="image/*">
+  <button type="button" class="feedback-btn" onclick="sendToDiscord()">送信する</button>
+</div>
+
+<script>
+  const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1561392217019645952/3Ti1eqZdbtsJe9rfzFPesWPPn1w_ehfi-JzKo-QLnE7ozirTDam7s_8U7u53q1HoBLdn";
+
+  let currentSlot = 'all', currentType = 'all', currentRank = 'all', currentCategory = 'all';
+
+  // 読み込み対象のJSONファイル一覧
+  const jsonFiles = [
+    'meishi-muso.json',
+    'meishi-kisho.json',
+    'meishi-densetsu.json',
+    'meishi-takuetsu.json',
+    'meishi-yushu.json'
+  ];
+
+  // ページ読み込み時に分割JSONを一括取得
+  window.addEventListener('DOMContentLoaded', () => {
+    Promise.all(
+      jsonFiles.map(file => 
+        fetch(file)
+          .then(res => {
+            if (!res.ok) return [];
+            return res.json();
+          })
+          .catch(() => [])
+      )
+    )
+    .then(results => {
+      const tbody = document.querySelector('#skillsTable tbody');
+      
+      // 全ファイルを1つの配列に統合
+      const allData = results.flat();
+
+      allData.forEach(item => {
+        const tr = document.createElement('tr');
+        tr.setAttribute('data-slot', item.slot);
+        tr.setAttribute('data-type', item.type);
+        tr.setAttribute('data-rank', item.rank);
+        tr.setAttribute('data-category', item.category);
+
+        const rankClass = item.rank === '伝説(希少)' ? 'rank-rare-legend' : (item.rank === '卓越' ? 'rank-ex' : '');
+        const badgesHtml = item.badges.map(b => `<span class="badge ${b.class}">${b.text}</span>`).join('');
+
+        tr.innerHTML = `
+          <td class="meishi-name">${item.name}</td>
+          <td><span class="rank-badge ${rankClass}">${item.rank}</span></td>
+          <td><span class="type-badge">${item.type}</span></td>
+          <td><span class="slot-badge slot-${item.slot}">${item.slotName}</span></td>
+          <td class="skill-name">${item.skillName}</td>
+          <td>${badgesHtml}</td>
+          <td>${item.detail}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      applyFilters();
+    })
+    .catch(err => console.error("データ読み込みエラー:", err));
+  });
+
+  function filterSlot(slot, btn) { currentSlot = slot; updateActiveButton(btn); applyFilters(); }
+  function filterType(type, btn) { currentType = type; updateActiveButton(btn); applyFilters(); }
+  function filterRank(rank, btn) { currentRank = rank; updateActiveButton(btn); applyFilters(); }
+  function filterCategory(cat, btn) { currentCategory = cat; updateActiveButton(btn); applyFilters(); }
+
+  function updateActiveButton(btn) {
+    const buttons = btn.parentElement.querySelectorAll('.btn');
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+
+  function filterSearch() { applyFilters(); }
+
+  function applyFilters() {
+    const searchText = document.getElementById('searchInput').value.trim().toLowerCase();
+    const rows = document.querySelectorAll('#skillsTable tbody tr');
+
+    rows.forEach(row => {
+      const slot = row.getAttribute('data-slot');
+      const type = row.getAttribute('data-type');
+      const rank = row.getAttribute('data-rank');
+      const category = row.getAttribute('data-category') || '';
+      const text = row.innerText.toLowerCase();
+
+      const matchSlot = (currentSlot === 'all') || (slot === currentSlot);
+      const matchType = (currentType === 'all') || (type === currentType);
+      const matchRank = (currentRank === 'all') || (rank === currentRank);
+
+      let matchCategory = false;
+      if (currentCategory === 'all') {
+        matchCategory = true;
+      } else if (currentCategory === 'バフ') {
+        matchCategory = category.includes('バフ') || category.includes('デバフ');
+      } else {
+        matchCategory = category.includes(currentCategory);
+      }
+
+      const matchSearch = (searchText === '') || text.includes(searchText);
+
+      row.style.display = (matchSlot && matchType && matchRank && matchCategory && matchSearch) ? '' : 'none';
+    });
+  }
+
+  // Discord送信機能
+  async function sendToDiscord() {
+    const textInput = document.getElementById('feedbackText');
+    const imageInput = document.getElementById('feedbackImage');
+    
+    const message = textInput.value.trim();
+    const file = imageInput.files[0];
+
+    if (!message && !file) {
+      alert("メッセージまたは画像を選択してください。");
+      return;
+    }
+
+    const formData = new FormData();
+    const payload = {
+      content: `【名士スキル一覧 修正希望・メッセージ】\n${message || "（画像のみ送信）"}`
+    };
+
+    formData.append("payload_json", JSON.stringify(payload));
+
+    if (file) {
+      formData.append("file", file, file.name);
+    }
+
+    try {
+      const response = await fetch(DISCORD_WEBHOOK_URL, {
+        method: "POST",
+        body: formData
+      });
+
+      if (response.ok) {
+        alert("あすとろへ送信しました！ありがとうございます。");
+        textInput.value = "";
+        imageInput.value = "";
+      } else {
+        alert("送信に失敗しました。時間をおいて再度お試しください。");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("送信中にエラーが発生しました。");
+    }
+  }
+</script>
+</body>
+</html>
