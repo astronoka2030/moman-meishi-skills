@@ -117,17 +117,18 @@
   /* ランクバッジ基本スタイル */
   .rank-badge { 
     display: inline-block; 
-    padding: 2px 4px; 
+    padding: 2px 6px; 
     border-radius: 3px; 
     font-size: 9.5px; 
     font-weight: bold; 
     white-space: nowrap; 
+    border: none; /* 外周線をクリア */
   }
 
-  /* 各ランクの色分け設定 */
-  .rank-shinwa { background-color: #fce7f3; color: #9d174d; border: 1px solid #f472b6; } /* 神話 (ピンク系) */
-  .rank-muso { background-color: #fee2e2; color: #991b1b; border: 1px solid #f87171; }   /* 無双 (赤系) */
-  .rank-densetsu { background-color: #fef3c7; color: #b45309; border: 1px solid #f59e0b; } /* 伝説 (ゴールド系) */
+  /* 各ランクの色分け設定（枠線なし・背景色＋文字色） */
+  .rank-shinwa { background-color: #fbcfe8; color: #831843; }   /* 神話 (濃いピンク系) */
+  .rank-muso { background-color: #fee2e2; color: #991b1b; }     /* 無双 (赤系) */
+  .rank-densetsu { background-color: #fef3c7; color: #b45309; } /* 伝説 (ゴールド系) */
   .rank-ex { background-color: #e0e7ff; color: #3730a3; }       /* 卓越 (インディゴ/青系) */
   .rank-yushu { background-color: #d1fae5; color: #065f46; }    /* 優秀 (緑系) */
 
