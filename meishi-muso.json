@@ -602,7 +602,7 @@
   {
     "name": "老子",
     "rank": "無双",
-    "type": "盾",
+    "type": "騎",
     "slot": "1",
     "slotName": "戦闘",
     "skillName": "道は自然に従う",
@@ -616,7 +616,7 @@
   {
     "name": "老子",
     "rank": "無双",
-    "type": "盾",
+    "type": "騎",
     "slot": "2",
     "slotName": "生産",
     "skillName": "砂採取の達人",
@@ -629,7 +629,7 @@
   {
     "name": "老子",
     "rank": "無双",
-    "type": "盾",
+    "type": "騎",
     "slot": "3",
     "slotName": "パッシブ",
     "skillName": "無為の治",
@@ -724,7 +724,7 @@
   {
     "name": "項羽",
     "rank": "無双",
-    "type": "盾",
+    "type": "騎",
     "slot": "1",
     "slotName": "戦闘",
     "skillName": "覇王の力",
@@ -738,7 +738,7 @@
   {
     "name": "項羽",
     "rank": "無双",
-    "type": "盾",
+    "type": "騎",
     "slot": "2",
     "slotName": "生産",
     "skillName": "畜産の達人",
@@ -751,7 +751,7 @@
   {
     "name": "項羽",
     "rank": "無双",
-    "type": "盾",
+    "type": "騎",
     "slot": "3",
     "slotName": "パッシブ",
     "skillName": "覇王の威",
@@ -764,7 +764,7 @@
   {
     "name": "姜子牙",
     "rank": "無双",
-    "type": "盾",
+    "type": "弓",
     "slot": "1",
     "slotName": "戦闘",
     "skillName": "餌食",
@@ -778,7 +778,7 @@
   {
     "name": "姜子牙",
     "rank": "無双",
-    "type": "盾",
+    "type": "弓",
     "slot": "2",
     "slotName": "生産",
     "skillName": "銅採掘の達人",
@@ -791,7 +791,7 @@
   {
     "name": "姜子牙",
     "rank": "無双",
-    "type": "盾",
+    "type": "弓",
     "slot": "3",
     "slotName": "パッシブ",
     "skillName": "優れた謀略",
@@ -804,7 +804,7 @@
   {
     "name": "万霊・女媧",
     "rank": "無双",
-    "type": "弓",
+    "type": "騎",
     "slot": "1",
     "slotName": "戦闘",
     "skillName": "元臣の聖威",
@@ -819,7 +819,7 @@
   {
     "name": "万霊・女媧",
     "rank": "無双",
-    "type": "弓",
+    "type": "騎",
     "slot": "2",
     "slotName": "生産",
     "skillName": "淘国の達人",
@@ -832,7 +832,7 @@
   {
     "name": "万霊・女媧",
     "rank": "無双",
-    "type": "弓",
+    "type": "騎",
     "slot": "3",
     "slotName": "パッシブ",
     "skillName": "万霊への恩恵",
@@ -845,7 +845,7 @@
   {
     "name": "帝王伏羲",
     "rank": "無双",
-    "type": "弓",
+    "type": "盾",
     "slot": "1",
     "slotName": "戦闘",
     "skillName": "破邪八卦陣",
@@ -859,7 +859,7 @@
   {
     "name": "帝王伏羲",
     "rank": "無双",
-    "type": "弓",
+    "type": "盾",
     "slot": "2",
     "slotName": "生産",
     "skillName": "中州達人",
@@ -872,7 +872,7 @@
   {
     "name": "帝王伏羲",
     "rank": "無双",
-    "type": "弓",
+    "type": "盾",
     "slot": "3",
     "slotName": "パッシブ",
     "skillName": "先天霊気",
