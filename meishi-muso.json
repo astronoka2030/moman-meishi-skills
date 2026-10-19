@@ -1,0 +1,590 @@
+[
+  {
+    "name": "ノーベル",
+    "rank": "無双",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "爆風裁決",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "デバフ"},
+      {"class": "badge-special", "text": "状態異常"}
+    ],
+    "category": "攻撃 バフ 特殊",
+    "detail": "(※最大レベル時) 40%発動: 敵に320%ダメ / 敵謀略-2200 / 敵回復弱化+32% (3ターン持続)"
+  },
+  {
+    "name": "ノーベル",
+    "rank": "無双",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "機械の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "(※最大レベル時) 機械工場任命時、資源生産速度 +184%"
+  },
+  {
+    "name": "ノーベル",
+    "rank": "無双",
+    "type": "騎",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "爆発の芸術",
+    "badges": [
+      {"class": "badge-defense", "text": "軽減"},
+      {"class": "badge-special", "text": "通貨獲得"}
+    ],
+    "category": "軽減 特殊",
+    "detail": "(※最大レベル時) 海上シルクロードで味方ダメ軽減+60%"
+  },
+  {
+    "name": "張騫",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "漠天威風",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "デバフ"},
+      {"class": "badge-defense", "text": "軽減"}
+    ],
+    "category": "攻撃 バフ 軽減",
+    "detail": "(※最大レベル時) 40%発動: 敵に320%ダメ / 敵デバフ3〜4個解除 / 特殊ダメ軽減+51% (3ターン持続)"
+  },
+  {
+    "name": "張騫",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "紡績の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "(※最大レベル時) 織物屋任命時、資源生産速度 +184%"
+  },
+  {
+    "name": "張騫",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "博望特使",
+    "badges": [
+      {"class": "badge-buff", "text": "実力バフ"},
+      {"class": "badge-special", "text": "通貨獲得"}
+    ],
+    "category": "バフ 特殊",
+    "detail": "(※最大レベル時) 西域開拓の実力+60% / シルクロード通商の銅貨報酬が最大値に固定"
+  },
+  {
+    "name": "星神夸父",
+    "rank": "卓越",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "投技為林",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "印付与/通常攻撃変化"}
+    ],
+    "category": "攻撃 特殊",
+    "detail": "(※最大レベル時) 20%発動: 敵に260%ダメ / 100%で敵6〜9人に「春日の印」付与 (印2ターン持続)"
+  },
+  {
+    "name": "星神夸父",
+    "rank": "卓越",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "採石の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "(※最大レベル時) 採石場任命時、資源生産速度 +92%"
+  },
+  {
+    "name": "始祖黄帝",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "天断の極意",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃・即死"},
+      {"class": "badge-buff", "text": "バフ/デバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "40%発動: 敵に200%ダメージ / 飛剣で敵名士2人即死 / 味方全攻撃バフ+15% / 敵攻撃デバフ-15% (2ターン持続)"
+  },
+  {
+    "name": "始祖黄帝",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "海国の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "海国編建築任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "始祖黄帝",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "土徳の瑞祥",
+    "badges": [
+      {"class": "badge-defense", "text": "軽減"}
+    ],
+    "category": "軽減",
+    "detail": "低品質名士スキルからの被ダメージ -15%"
+  },
+  {
+    "name": "蚩尤",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "戦獣の咆哮",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃・会心"}
+    ],
+    "category": "攻撃",
+    "detail": "40%発動: 敵に200%ダメージ / 50%の確率でクリティカル(ダメージ2倍)"
+  },
+  {
+    "name": "蚩尤",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "伐採の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "伐採場任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "蚩尤",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "無双の勇",
+    "badges": [
+      {"class": "badge-buff", "text": "征戦バフ"}
+    ],
+    "category": "バフ",
+    "detail": "征戦時、味方全体のダメージバフ +12%"
+  },
+  {
+    "name": "孟子",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "魚、我が欲するところなり",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-defense", "text": "軽減"},
+      {"class": "badge-special", "text": "状態異常"}
+    ],
+    "category": "攻撃 軽減 特殊",
+    "detail": "40%発動: 敵に200%ダメージ / 50%で「生」(味方ダメ軽減+30% 2ターン持続) / 50%で「義」(敵行動前に120%異常ダメ 2ターン持続)"
+  },
+  {
+    "name": "孟子",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "舗装の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "舗装工場任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "孟子",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "仁者無敵",
+    "badges": [
+      {"class": "badge-special", "text": "点呼スコア"}
+    ],
+    "category": "特殊",
+    "detail": "戦場点呼でブロック削除時のスコア +6%"
+  },
+  {
+    "name": "リンカーン",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "独立宣言",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "謀略バフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "40%発動: 敵に200%ダメージ＋味方謀略+1000 / 味方体力50%未満ならダメ係数+100%、50%以上なら謀略追加+500"
+  },
+  {
+    "name": "リンカーン",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "石油の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "油井任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "リンカーン",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "自由の灯台",
+    "badges": [
+      {"class": "badge-special", "text": "褒章産出"}
+    ],
+    "category": "特殊",
+    "detail": "十大文明における文明の褒章産出 +6%"
+  },
+  {
+    "name": "真田幸村",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "烈火覇王槍",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃・行動不能"}
+    ],
+    "category": "攻撃 特殊",
+    "detail": "40%発動: 敵に200%斬撃ダメージ / 50%の確率で「戦慄」状態（行動不能 1ターン持続）"
+  },
+  {
+    "name": "真田幸村",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製鉄の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "製鉄所任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "真田幸村",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "赤備の威名",
+    "badges": [
+      {"class": "badge-buff", "text": "泰山バフ"}
+    ],
+    "category": "バフ",
+    "detail": "泰山対決・泰山争覇の戦闘時、味方全体のダメージバフ +12%"
+  },
+  {
+    "name": "穆桂英",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "門陣を打ち破る",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "バフ"},
+      {"class": "badge-special", "text": "状態異常"}
+    ],
+    "category": "攻撃 バフ 特殊",
+    "detail": "40%発動: 敵に200%ダメージ / 味方の状態異常ダメ+30% / 敵の行動前に120%の状態異常ダメ (2ターン持続)"
+  },
+  {
+    "name": "穆桂英",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "栽培の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "農園任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "穆桂英",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "元帥",
+    "badges": [
+      {"class": "badge-special", "text": "軍隊上限"}
+    ],
+    "category": "特殊",
+    "detail": "燕雲烽火の中、全軍隊の上限数が +30% 増加"
+  },
+  {
+    "name": "岳飛",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "破虜の神槍",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "デバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "40%発動: 敵に200%ダメージ / 敵に「恐怖」付与 (行動前100%ダメ＆攻撃力-15% 2ターン持続)"
+  },
+  {
+    "name": "岳飛",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "舗装の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "舗装工場任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "岳飛",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "直接突進",
+    "badges": [
+      {"class": "badge-buff", "text": "泰山バフ"}
+    ],
+    "category": "バフ",
+    "detail": "泰山対決・泰山争覇の戦闘時、味方全体のダメージバフ +12%"
+  },
+  {
+    "name": "五竹",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "レーザーアイ",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃・消滅"}
+    ],
+    "category": "攻撃 特殊",
+    "detail": "40%発動: 敵に200%ダメージ / 敵前列1人を溶かし、30%で拡散してさらに前列1人を溶かす"
+  },
+  {
+    "name": "五竹",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "合金達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "合金工場任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "五竹",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "大宗師の訓練",
+    "badges": [
+      {"class": "badge-buff", "text": "特定キャラ強化"}
+    ],
+    "category": "バフ",
+    "detail": "范閑の攻撃力と体力 +15%"
+  },
+  {
+    "name": "アインシュタイン",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "時空の歪み",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-defense", "text": "シールド"}
+    ],
+    "category": "攻撃 回復",
+    "detail": "40%発動: 敵に200%ダメージ / 味方に最大体力20%のシールド付与＋超過回復をシールド変換 (3ターン持続)"
+  },
+  {
+    "name": "アインシュタイン",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "合金達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "合金工場任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "アインシュタイン",
+    "rank": "無双",
+    "type": "槍",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "相対性理論",
+    "badges": [
+      {"class": "badge-special", "text": "発電バフ"}
+    ],
+    "category": "特殊",
+    "detail": "発電所が通電建築に与える生産速度バフ +6%"
+  },
+  {
+    "name": "范閑",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "致命的狙撃",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃・追撃"}
+    ],
+    "category": "攻撃",
+    "detail": "40%発動: 敵に200%ダメージ / 55%で200%追加ダメ (敵体力20%未満で追加ダメがクリティカル化)"
+  },
+  {
+    "name": "范閑",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "中州達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "中州編建築任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "范閑",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "詩名天下に轟く",
+    "badges": [
+      {"class": "badge-defense", "text": "軽減"}
+    ],
+    "category": "軽減",
+    "detail": "低品質名士スキルからの被ダメージ -15%"
+  },
+  {
+    "name": "始皇帝",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "秦軍侵攻",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃・先制"},
+      {"class": "badge-buff", "text": "デバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "前列配置時先制攻撃。40%発動: 敵に200%ダメージ＋被ダメージ+50% (3ターン持続)"
+  },
+  {
+    "name": "始皇帝",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "砂採取の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "砂利採取場任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "始皇帝",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "天下統一",
+    "badges": [
+      {"class": "badge-buff", "text": "全体バフ"}
+    ],
+    "category": "バフ",
+    "detail": "あらゆる戦闘で味方全体のダメージバフ +6%"
+  },
+  {
+    "name": "諸葛亮",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "連弩の奇襲",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃・連撃"}
+    ],
+    "category": "攻撃",
+    "detail": "40%発動: 敵に200%ダメージ / 50%の確率で連弩が再度発射され200%追加ダメージ"
+  },
+  {
+    "name": "諸葛亮",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製紙の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "製紙場任命時、資源生産速度 +40%"
+  },
+  {
+    "name": "諸葛亮",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "奇策妙計",
+    "badges": [
+      {"class": "badge-buff", "text": "謀略/蛮族バフ"}
+    ],
+    "category": "バフ",
+    "detail": "戦闘開始時に味方謀略+1500 / 蛮族侵入防御時、味方全体のダメージバフ +12%"
+  }
+]
