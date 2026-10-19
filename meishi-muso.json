@@ -1,5 +1,45 @@
 [
   {
+    "name": "劉備",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "雌雄双剣",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "回復強化/HP回復"}
+    ],
+    "category": "攻撃 回復",
+    "detail": "40%発動: 敵に200%ダメ / 味方の回復強化+10% / 毎ターン開始時、味方の最大体力の10%回復 (3ターン継続)"
+  },
+  {
+    "name": "劉備",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製紙の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を製紙場に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "劉備",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "徳を以て人に接する",
+    "badges": [
+      {"class": "badge-special", "text": "選抜確率バフ"}
+    ],
+    "category": "特殊",
+    "detail": "顧問の自動選抜時に指定の名士と資源バフを獲得する確率+0.5倍"
+  },
+  {
     "name": "ナポレオン",
     "rank": "無双",
     "type": "騎",
