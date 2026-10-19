@@ -1,5 +1,286 @@
 [
-    {
+  {
+    "name": "ニュートン",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "万物因果",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "幻覚/行動強制"}
+    ],
+    "category": "攻撃 特殊",
+    "detail": "40%発動: 敵に200%ダメ / 50%で「幻覚」(敵の行動時、自身に1回の通常攻撃を行う、1ターン持続)"
+  },
+  {
+    "name": "ニュートン",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製鋼の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を製鋼所に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "ニュートン",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "科学の巨匠",
+    "badges": [
+      {"class": "badge-special", "text": "研究時間短縮"}
+    ],
+    "category": "特殊",
+    "detail": "技能精研に必要な時間-6%"
+  },
+  {
+    "name": "宋太祖",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "杯酒釈兵権",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "デバフ解除/スキル封印"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "40%発動: 敵に200%ダメ / デバフ1つ解除 / 次に味方がスキル攻撃を受けると敵の戦闘スキル封印"
+  },
+  {
+    "name": "宋太祖",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "石炭採掘の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を炭鉱に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "宋太祖",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "皇帝即位",
+    "badges": [
+      {"class": "badge-buff", "text": "実力バフ"}
+    ],
+    "category": "バフ",
+    "detail": "戦役での味方の実力+6%"
+  },
+  {
+    "name": "孫権",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "江火焚天",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "燃焼/追加ダメ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "40%発動: 敵に200%ダメ / 敵「燃焼」(行動前、攻撃力80%ダメ、2ターン持続) / 燃焼状態の敵へ追加ダメ"
+  },
+  {
+    "name": "孫権",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "陶磁器の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を陶器屋に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "孫権",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "軍の倉庫",
+    "badges": [
+      {"class": "badge-produce", "text": "基礎生産バフ"}
+    ],
+    "category": "生産",
+    "detail": "全名士の任命後の基礎生産量+15%"
+  },
+  {
+    "name": "郭嘉",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "破竜鬼謀",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-defense", "text": "シールド"},
+      {"class": "badge-buff", "text": "謀略バフ"}
+    ],
+    "category": "攻撃 軽減 バフ",
+    "detail": "40%発動: 敵に200%ダメ / 味方に最大体力15%分シールド / 謀略上限+800"
+  },
+  {
+    "name": "郭嘉",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製紙の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を製紙工場に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "郭嘉",
+    "rank": "無双",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "天賦の才",
+    "badges": [
+      {"class": "badge-special", "text": "軍糧上限バフ"}
+    ],
+    "category": "特殊",
+    "detail": "官渡の戦いにおいて、全軍糧の上限数+30%"
+  },
+  {
+    "name": "孫武",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "進攻の謀略",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃・追加ダメ"}
+    ],
+    "category": "攻撃",
+    "detail": "40%発動: 敵に200%ダメ / 次の行動時のダメージがさらに+110%"
+  },
+  {
+    "name": "孫武",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製鉄の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を製鉄所に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "孫武",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "兵法の聖人",
+    "badges": [
+      {"class": "badge-buff", "text": "軍隊実力バフ"}
+    ],
+    "category": "バフ",
+    "detail": "遠征中の軍隊の実力+6%"
+  },
+  {
+    "name": "武帝",
+    "rank": "無双",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "天威威圧",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "バフ解除/召喚"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "40%発動: 敵に200%ダメ / 敵のバフ1〜3個解除 / 50%で霍去病召喚(1戦闘1回)"
+  },
+  {
+    "name": "武帝",
+    "rank": "無双",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製紙の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を製紙工場に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "武帝",
+    "rank": "無双",
+    "type": "騎",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "千里の遠征",
+    "badges": [
+      {"class": "badge-defense", "text": "ダメバフ/軽減"}
+    ],
+    "category": "軽減",
+    "detail": "漠北対決時に味方全体のダメバフ＆ダメ軽減それぞれ+6%"
+  },
+  {
+    "name": "荘子",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "夢蝶",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-defense", "text": "軽減"},
+      {"class": "badge-special", "text": "スキル封印"}
+    ],
+    "category": "攻撃 軽減 特殊",
+    "detail": "40%発動: 敵に200%ダメ / 敵「夢蝶幻境」(ダメ軽減-24%、3ターン) / 次ターン45%でスキル不可"
+  },
+  {
+    "name": "荘子",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "栽培の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を農場に任命すると、その建築の資源生産速度+40%"
+  },
+  {
+    "name": "荘子",
+    "rank": "無双",
+    "type": "盾",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "逍遥遊",
+    "badges": [
+      {"class": "badge-special", "text": "売却価格バフ"}
+    ],
+    "category": "特殊",
+    "detail": "宅地の波乱中、家屋の売却価格+6%"
+  },
+   {
     "name": "老子",
     "rank": "無双",
     "type": "盾",
