@@ -113,9 +113,24 @@
   tr:hover td:first-child { background-color: #f8f9fa; }
 
   .meishi-name { font-weight: bold; font-size: 10.5px; color: #1e293b; line-height: 1.2; }
-  .rank-badge { display: inline-block; padding: 2px 3px; border-radius: 3px; font-size: 9.5px; font-weight: bold; white-space: nowrap; }
-  .rank-rare-legend { background-color: #fef3c7; color: #b45309; border: 1px solid #f59e0b; }
-  .rank-ex { background-color: #e0e7ff; color: #3730a3; }
+  
+  /* ランクバッジ基本スタイル */
+  .rank-badge { 
+    display: inline-block; 
+    padding: 2px 4px; 
+    border-radius: 3px; 
+    font-size: 9.5px; 
+    font-weight: bold; 
+    white-space: nowrap; 
+  }
+
+  /* 各ランクの色分け設定 */
+  .rank-shinwa { background-color: #fce7f3; color: #9d174d; border: 1px solid #f472b6; } /* 神話 (ピンク系) */
+  .rank-muso { background-color: #fee2e2; color: #991b1b; border: 1px solid #f87171; }   /* 無双 (赤系) */
+  .rank-densetsu { background-color: #fef3c7; color: #b45309; border: 1px solid #f59e0b; } /* 伝説 (ゴールド系) */
+  .rank-ex { background-color: #e0e7ff; color: #3730a3; }       /* 卓越 (インディゴ/青系) */
+  .rank-yushu { background-color: #d1fae5; color: #065f46; }    /* 優秀 (緑系) */
+
   .type-badge { display: inline-block; padding: 2px 4px; border-radius: 3px; font-size: 9.5px; font-weight: bold; background-color: #e2e8f0; color: #334155; white-space: nowrap; }
   
   .slot-badge { display: inline-block; padding: 2px 4px; border-radius: 3px; font-size: 9.5px; font-weight: bold; white-space: nowrap; }
@@ -167,8 +182,8 @@
   <div class="filter-group">
     <div class="group-title">⭐ ランク:</div>
     <button class="btn active" onclick="filterRank('all', this)">すべて</button>
+    <button class="btn" onclick="filterRank('神話', this)">神話</button>
     <button class="btn" onclick="filterRank('無双', this)">無双</button>
-    <button class="btn" onclick="filterRank('伝説(希少)', this)">伝説(希少)</button>
     <button class="btn" onclick="filterRank('伝説', this)">伝説</button>
     <button class="btn" onclick="filterRank('卓越', this)">卓越</button>
     <button class="btn" onclick="filterRank('優秀', this)">優秀</button>
@@ -256,7 +271,27 @@
         tr.setAttribute('data-rank', item.rank);
         tr.setAttribute('data-category', item.category);
 
-        const rankClass = item.rank === '伝説(希少)' ? 'rank-rare-legend' : (item.rank === '卓越' ? 'rank-ex' : '');
+        let rankClass = '';
+        switch (item.rank) {
+          case '神話':
+            rankClass = 'rank-shinwa';
+            break;
+          case '無双':
+            rankClass = 'rank-muso';
+            break;
+          case '伝説':
+            rankClass = 'rank-densetsu';
+            break;
+          case '卓越':
+            rankClass = 'rank-ex';
+            break;
+          case '優秀':
+            rankClass = 'rank-yushu';
+            break;
+          default:
+            rankClass = '';
+        }
+
         const badgesHtml = item.badges.map(b => `<span class="badge ${b.class}">${b.text}</span>`).join('');
 
         tr.innerHTML = `
