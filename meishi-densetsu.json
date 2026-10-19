@@ -196,5 +196,167 @@
     ],
     "category": "特殊",
     "detail": "技能の研究時間 -6%"
+  },
+  {
+    "name": "武王",
+    "rank": "伝説",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "軍威威厳",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-defense", "text": "軽減"}
+    ],
+    "category": "攻撃 軽減",
+    "detail": "30%の確率で発動。武王は礼楽の大鐘を掲げ、攻撃力の160%のダメージを与える。礼楽制度により、味方のダメージ軽減+20% (3ターン持続)"
+  },
+  {
+    "name": "武王",
+    "rank": "伝説",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "伐採の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を伐採場に任命すると、その建築の資源生産速度+30%"
+  },
+  {
+    "name": "武王",
+    "rank": "伝説",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "不屈の意志",
+    "badges": [
+      {"class": "badge-special", "text": "兵力損失軽減"}
+    ],
+    "category": "特殊",
+    "detail": "武王は兵士たちの不屈の意志を鍛えるのが得意だ。征戦での兵力の損失-6%。"
+  },
+  {
+    "name": "張良",
+    "rank": "伝説",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "黄石公兵法",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "デバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "30%の確率で発動。張良が陣形を組み、敵に攻撃力の160%のダメージを与える。陣形に分断された敵は50%の確率で「景気」状態になる(ダメージ軽減-20%、3ターン持続)"
+  },
+  {
+    "name": "張良",
+    "rank": "伝説",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製紙の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を製紙場に任命すると、その建築の資源生産速度+30%"
+  },
+  {
+    "name": "張良",
+    "rank": "伝説",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "聡明良策",
+    "badges": [
+      {"class": "badge-buff", "text": "謀略バフ"},
+      {"class": "badge-special", "text": "通貨獲得"}
+    ],
+    "category": "バフ 特殊",
+    "detail": "戦闘開始時に、味方の謀略値+1000。張良は軍事だけでなく国を治めることにも長けている。シルクロードの通商で獲得できる銅貨+6%。"
+  },
+  {
+    "name": "李白",
+    "rank": "伝説",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "酒酔攻撃",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "状態異常"}
+    ],
+    "category": "攻撃 特殊",
+    "detail": "30%の確率で発動。李白が杯を高く掲げる。敵に攻撃力の160%のダメージを与えるとともに、50%の確率で敵に「酩酊」状態を付与(敵の行動前に攻撃力の50%のダメージを与える。3ターン持続)。"
+  },
+  {
+    "name": "李白",
+    "rank": "伝説",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "醸造の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を酒坊に任命すると、その建築の資源生産速度+30%"
+  },
+  {
+    "name": "李白",
+    "rank": "伝説",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "華麗な文才",
+    "badges": [
+      {"class": "badge-special", "text": "販売量バフ"}
+    ],
+    "category": "特殊",
+    "detail": "李白の詩により市場の商品が大人気となった。屋台での1回の販売量+6%。"
+  },
+  {
+    "name": "林則徐",
+    "rank": "伝説",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "雲払う旗",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "回復強化"}
+    ],
+    "category": "攻撃 特殊",
+    "detail": "30%の確率で発動。山高きこと千仞、欲無ければ剛なる割り角なり。林則徐が敵に攻撃力160%のダメージを与える。海皿を納める、弱き者ありて方立ちなり。林則徐が味方の回復強化+30%(戦闘終了まで持続)"
+  },
+  {
+    "name": "林則徐",
+    "rank": "伝説",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "火器の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を火器屋に任命すると、その建築の資源生産速度+30%"
+  },
+  {
+    "name": "林則徐",
+    "rank": "伝説",
+    "type": "弓",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "国事留意",
+    "badges": [
+      {"class": "badge-produce", "text": "全建築生産量バフ"}
+    ],
+    "category": "生産",
+    "detail": "林則徐は世界を見通し、国のことを思う。全建築の生産速度+6%。"
   }
 ]
+
