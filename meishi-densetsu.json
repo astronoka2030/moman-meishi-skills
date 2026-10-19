@@ -558,6 +558,166 @@
     ],
     "category": "軽減",
     "detail": "匈奴との戦闘時、味方全体のダメージ軽減+12%"
+  },
+  {
+    "name": "蘭陵王",
+    "rank": "伝説",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "戦の刃",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "混乱"}
+    ],
+    "category": "攻撃 特殊",
+    "detail": "30%発動: 敵に160%ダメ / 30%で「混乱」(スキル使用不可、1ターン持続)"
+  },
+  {
+    "name": "蘭陵王",
+    "rank": "伝説",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "醸造の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を酒坊に任命すると、その建築の資源生産速度+30%"
+  },
+  {
+    "name": "蘭陵王",
+    "rank": "伝説",
+    "type": "騎",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "高まる士気",
+    "badges": [
+      {"class": "badge-special", "text": "土地獲得"}
+    ],
+    "category": "特殊",
+    "detail": "遠征軍事情報台で獲得する土地+10%"
+  },
+  {
+    "name": "霍去病",
+    "rank": "伝説",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "蝶度刺し",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃・追加ダメ"}
+    ],
+    "category": "攻撃",
+    "detail": "30%発動: 敵に160%ダメ / 50%で50%追加ダメ / 30%で70%追加ダメ / 20%で100%追加ダメ"
+  },
+  {
+    "name": "霍去病",
+    "rank": "伝説",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "畜産の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を牧場に任命すると、その建築の資源生産速度+30%"
+  },
+  {
+    "name": "霍去病",
+    "rank": "伝説",
+    "type": "騎",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "戦場疾駆",
+    "badges": [
+      {"class": "badge-buff", "text": "ダメバフ"}
+    ],
+    "category": "バフ",
+    "detail": "匈奴との戦闘時、味方全体のダメージバフ+12%"
+  },
+  {
+    "name": "源義経",
+    "rank": "伝説",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "疾風の斬",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-defense", "text": "デバフ無効"}
+    ],
+    "category": "攻撃 軽減",
+    "detail": "30%発動: 敵に160%ダメ / 50%で味方全体「疾風」(全デバフ無効、1ターン持続)"
+  },
+  {
+    "name": "源義経",
+    "rank": "伝説",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "陶磁器の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を陶器屋に任命すると、その建築の資源生産速度+30%"
+  },
+  {
+    "name": "源義経",
+    "rank": "伝説",
+    "type": "騎",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "八幡神威",
+    "badges": [
+      {"class": "badge-special", "text": "市場交易効率"}
+    ],
+    "category": "特殊",
+    "detail": "味方の市場交易の効率+3%"
+  },
+  {
+    "name": "コロンブス",
+    "rank": "伝説",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "遠洋狂瀾",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "HP回復"}
+    ],
+    "category": "攻撃 回復",
+    "detail": "30%発動: 敵に160%ダメ / 味方に「遠洋」(行動前に最大HP10%回復、3ターン持続)"
+  },
+  {
+    "name": "コロンブス",
+    "rank": "伝説",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製銅の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を製銅所に任命すると、その建築の資源生産速度+30%"
+  },
+  {
+    "name": "コロンブス",
+    "rank": "伝説",
+    "type": "騎",
+    "slot": "3",
+    "slotName": "パッシブ",
+    "skillName": "発見の旅",
+    "badges": [
+      {"class": "badge-special", "text": "研究消費軽減"}
+    ],
+    "category": "特殊",
+    "detail": "技能精研の研究素材消費-6%"
   }
+
 ]
 
