@@ -268,5 +268,114 @@
     ],
     "category": "生産",
     "detail": "名士を織物屋に任命すると、その建築の資源生産速度+20%"
+  },
+  {
+    "name": "大禹",
+    "rank": "卓越",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "耒耜投げ",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "HP回復"}
+    ],
+    "category": "攻撃 回復",
+    "detail": "25%発動: 敵に140%ダメ / 味方最大HP10%回復"
+  },
+  {
+    "name": "大禹",
+    "rank": "卓越",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "採石の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を採石場に任命すると、その建築の資源生産速度+20%"
+  },
+  {
+    "name": "廉頗",
+    "rank": "卓越",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "荊の鞭",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-special", "text": "HP回復"},
+      {"class": "badge-buff", "text": "ダメバフ"}
+    ],
+    "category": "攻撃 回復 バフ",
+    "detail": "25%発動: 敵に160%ダメ / 味方最大HP10%回復 / 味方ダメバフ+10% (3ターン持続)"
+  },
+  {
+    "name": "廉頗",
+    "rank": "卓越",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "銅採掘の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を鉱山場に任命すると、その建築の資源生産速度+20%"
+  },
+  {
+    "name": "唐伯虎",
+    "rank": "卓越",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "秋の香遊び",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-defense", "text": "軽減"}
+    ],
+    "category": "攻撃 軽減",
+    "detail": "25%発動: 敵に140%ダメ / 自身ダメ軽減+10% (2ターン持続)"
+  },
+  {
+    "name": "唐伯虎",
+    "rank": "卓越",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "硝子の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を硝子屋に任命すると、その建築の資源生産速度+20%"
+  },
+  {
+    "name": "樊噲",
+    "rank": "卓越",
+    "type": "盾",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "鴻門の宴",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-defense", "text": "軽減"}
+    ],
+    "category": "攻撃 軽減",
+    "detail": "25%発動: 敵に140%ダメ / 味方ダメ軽減+10% (2ターン持続)"
+  },
+  {
+    "name": "樊噲",
+    "rank": "卓越",
+    "type": "盾",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "銅採掘の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を鉱山場に任命すると、その建築の資源生産速度+20%"
   }
 ]
