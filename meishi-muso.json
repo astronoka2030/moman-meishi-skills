@@ -1,20 +1,21 @@
 [
   {
     "name": "范閑",
-    "rank": "無双",
+    "rank": "神話",
     "type": "弓",
     "slot": "1",
     "slotName": "戦闘",
-    "skillName": "致命的狙撃",
+    "skillName": "流雲幻形剣",
     "badges": [
-      {"class": "badge-attack", "text": "攻撃・追撃"}
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "追加ダメ/クリティカル"}
     ],
-    "category": "攻撃",
-    "detail": "40%発動: 敵に200%ダメージ / 55%で200%追加ダメ (敵体力20%未満で追加ダメがクリティカル化)"
+    "category": "攻撃 バフ",
+    "detail": "50%発動: 敵に300%ダメ / 50%で250%追加ダメ (敵HP40%未満でクリティカル) / 発動後「覇道真気」ダメ+50%"
   },
   {
     "name": "范閑",
-    "rank": "無双",
+    "rank": "神話",
     "type": "弓",
     "slot": "2",
     "slotName": "生産",
@@ -23,19 +24,32 @@
       {"class": "badge-produce", "text": "生産"}
     ],
     "category": "生産",
-    "detail": "中州編建築任命時、資源生産速度 +40%"
+    "detail": "中州編のいずれかの建築に任命すると、その建築の資源生産速度+40%"
   },
   {
     "name": "范閑",
-    "rank": "無双",
+    "rank": "神話",
     "type": "弓",
     "slot": "3",
     "slotName": "パッシブ",
     "skillName": "詩名天下に轟く",
     "badges": [
-      {"class": "badge-defense", "text": "軽減"}
+      {"class": "badge-defense", "text": "被ダメ軽減"}
     ],
     "category": "軽減",
-    "detail": "低品質名士スキルからの被ダメージ -15%"
+    "detail": "自分より品質の低い名士スキルで受けるダメージをすべて-15%"
+  },
+  {
+    "name": "范閑",
+    "rank": "神話",
+    "type": "弓",
+    "slot": "4",
+    "slotName": "神話",
+    "skillName": "覇道真気",
+    "badges": [
+      {"class": "badge-special", "text": "先制/シールド無視"}
+    ],
+    "category": "特殊 攻撃",
+    "detail": "戦闘開始時「覇道真気」発動 / 味方が5回攻撃を受けるとチャージ完了し敵に100%真気ダメ (8%はシールド無視)"
   }
 ]
