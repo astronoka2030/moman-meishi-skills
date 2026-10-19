@@ -106,5 +106,167 @@
     ],
     "category": "生産",
     "detail": "酒坊任命時、資源生産速度 +20%"
+  },
+  {
+    "name": "神農",
+    "rank": "卓越",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "毒草攻撃",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "ダメバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "25%の確率で発動。神農は試毒済みの毒草を敵の口に押し込み、攻撃力140%のダメージを与える。毒草の毒性はそれぞれ異なり、50%の確率でダメージバフ+30%"
+  },
+  {
+    "name": "神農",
+    "rank": "卓越",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "農業の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を農場に任命すると、その建築の資源生産速度+20%"
+  },
+  {
+    "name": "李斯",
+    "rank": "卓越",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "焚書",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "全体攻撃バフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "25%の確率で発動。李斯が燃えている書籍を投げつけ、攻撃力140%のダメージを与える。さらに味方全体の攻撃力+10%(2ターン持続)"
+  },
+  {
+    "name": "李斯",
+    "rank": "卓越",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製鉄の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を製鉄所に任命すると、その建築の資源生産速度+20%"
+  },
+  {
+    "name": "宋江",
+    "rank": "卓越",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "天に代わってお仕置きだ",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "ダメバフ/攻撃バフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "25%の確率で発動。「天に代わりて道を行う」の旗印を掲げた宋江が、敵に攻撃力の140%のダメージを与える。さらに天道の加護を受けることで、味方のダメージバフ+5%、攻撃力+5%(3ターン持続)"
+  },
+  {
+    "name": "宋江",
+    "rank": "卓越",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "石炭採掘の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を炭鉱に任命すると、その建築の資源生産速度+20%"
+  },
+  {
+    "name": "司馬光",
+    "rank": "卓越",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "壺割り",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "攻撃力デバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "25%の確率で発動。司馬光が割った水がめの破片で、敵に攻撃力の140%のダメージを与える。さらに溢れ出る水で相手の行動を妨げ、敵の合計攻撃力-10%(2ターン持続)"
+  },
+  {
+    "name": "司馬光",
+    "rank": "卓越",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製銅の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を製銅所に任命すると、その建築の資源生産速度+20%"
+  },
+  {
+    "name": "ジェームズ・ワット",
+    "rank": "卓越",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "激熱警告",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "攻撃デバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "25%の確率で発動。科学の不思議な力を借りたジェームズ・ワットが敵に攻撃力の140%のダメージを与える。過熱した蒸気機関の高温により、50%の確率で敵の次の攻撃-30%。"
+  },
+  {
+    "name": "ジェームズ・ワット",
+    "rank": "卓越",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "舗装の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を舗装工場に任命すると、その建築の資源生産速度+20%"
+  },
+  {
+    "name": "伯牙と子期",
+    "rank": "卓越",
+    "type": "弓",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "高山流水",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "ダメバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "25%の確率で発動。伯牙と子期が協力して高山流水を奏で、敵に攻撃力の160%のダメージを与える。さらに美しい音色により、味方のダメージバフ+20%(3ターン持続)。"
+  },
+  {
+    "name": "伯牙と子期",
+    "rank": "卓越",
+    "type": "弓",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "紡績の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を織物屋に任命すると、その建築の資源生産速度+20%"
   }
 ]
