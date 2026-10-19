@@ -1,0 +1,109 @@
+[
+  {
+    "name": "曹雪芹",
+    "rank": "卓越",
+    "type": "槍",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "美女の怒り",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "バフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "25%発動: 敵に140%ダメージ / 味方の士気が高まり、合計攻撃力 +10% (2ターン持続)"
+  },
+  {
+    "name": "曹雪芹",
+    "rank": "卓越",
+    "type": "槍",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "石炭採掘の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "炭鉱任命時、資源生産速度 +20%"
+  },
+  {
+    "name": "燧人",
+    "rank": "卓越",
+    "type": "槍",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "燃焼",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "バフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "25%発動: 敵に140%ダメージ / 味方のダメージバフ +10% (2ターン持続)"
+  },
+  {
+    "name": "燧人",
+    "rank": "卓越",
+    "type": "槍",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "伐採の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "伐採場任命時、資源生産速度 +20%"
+  },
+  {
+    "name": "程咬金",
+    "rank": "卓越",
+    "type": "槍",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "巨斧斬り",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "バフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "25%発動: 敵に160%ダメージ / 味方のダメージバフ +20% (3ターン持続)"
+  },
+  {
+    "name": "程咬金",
+    "rank": "卓越",
+    "type": "槍",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製鉄の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "製鉄所任命時、資源生産速度 +20%"
+  },
+  {
+    "name": "伊尹",
+    "rank": "卓越",
+    "type": "槍",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "大鍋落とし",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-defense", "text": "軽減"}
+    ],
+    "category": "攻撃 軽減",
+    "detail": "25%発動: 敵に140%ダメージ / 味方のダメージ軽減 +10% (2ターン持続)"
+  },
+  {
+    "name": "伊尹",
+    "rank": "卓越",
+    "type": "槍",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "醸造の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "酒坊任命時、資源生産速度 +20%"
+  v２
