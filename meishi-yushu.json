@@ -241,6 +241,86 @@
     ],
     "category": "生産",
     "detail": "名士を伐採場に任命すると、その建築の資源生産速度+10%"
+  },
+  {
+    "name": "包女将",
+    "rank": "優秀",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "万病治療菜",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "通常攻撃ダメバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "20%発動: 敵に120%ダメ / 味方の通常攻撃ダメージ+8% (戦闘終了まで持続)"
+  },
+  {
+    "name": "包女将",
+    "rank": "優秀",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "栽培の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を農場に任命すると、その建築の資源生産速度+10%"
+  },
+  {
+    "name": "智叟",
+    "rank": "優秀",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "噛みつけ",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "通常攻撃ダメバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "20%発動: 敵に120%ダメ / 味方の通常攻撃ダメージ+8% (戦闘終了まで持続)"
+  },
+  {
+    "name": "智叟",
+    "rank": "優秀",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "農業の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を農場に任命すると、その建築の資源生産速度+10%"
+  },
+  {
+    "name": "趙茶娘",
+    "rank": "優秀",
+    "type": "騎",
+    "slot": "1",
+    "slotName": "戦闘",
+    "skillName": "お茶どうぞ",
+    "badges": [
+      {"class": "badge-attack", "text": "攻撃"},
+      {"class": "badge-buff", "text": "通常攻撃デバフ"}
+    ],
+    "category": "攻撃 バフ",
+    "detail": "20%発動: 敵に120%ダメ / 敵の通常攻撃ダメージ-8% (戦闘終了まで持続)"
+  },
+  {
+    "name": "趙茶娘",
+    "rank": "優秀",
+    "type": "騎",
+    "slot": "2",
+    "slotName": "生産",
+    "skillName": "製茶の達人",
+    "badges": [
+      {"class": "badge-produce", "text": "生産"}
+    ],
+    "category": "生産",
+    "detail": "名士を茶園に任命すると、その建築の資源生産速度+10%"
   }
-
 ]
